@@ -7,7 +7,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'first-banner': "url('./src/assets/banner-1.png')"
+        'first-banner': "url('./src/assets/banner-1.png')",
+        'second-banner': "url('./src/assets/banner-2.png')",
+        'third-banner': "url('./src/assets/banner-3.png')"
       }
     }
   },

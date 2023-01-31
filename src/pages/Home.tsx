@@ -6,6 +6,8 @@ import logoImage from './../assets/logo-jm.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
+import BannerContato from '../components/BannerContato'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -87,13 +89,17 @@ export default function Home() {
             Cases de sucesso
           </h2>
 
-          <div className="flex justify-between my-16">
+          <div className="flex justify-evenly my-16">
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
           </div>
         </div>
       </div>
+      {/* Banner fale conosco */}
+      <BannerContato />
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
