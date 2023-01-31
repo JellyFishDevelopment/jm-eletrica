@@ -5,6 +5,7 @@ import bannerOne from './../assets/banner-1.png'
 import logoImage from './../assets/logo-jm.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
+import SuccessCase from '../components/SuccessCase'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         statusMessage=""
         avatar={logoImage}
       />
+      {/* Banner principal */}
       <div className="relative text-center">
         <img
           src={bannerOne}
@@ -35,6 +37,7 @@ export default function Home() {
           color="#fff"
         />
       </div>
+      {/* Principais serviços */}
       <div className="bg-white p-16">
         <h2 className="text-black text-center font-bold text-6xl">
           Principais serviços
@@ -58,6 +61,37 @@ export default function Home() {
             text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
+        </div>
+      </div>
+      {/* Atuação no mercado */}
+      <div className="flex justify-start p-16 bg-second-banner w-full bg-no-repeat bg-cover">
+        <img src={logoImage} className="w-80 h-80 mx-auto" alt="Logo" />
+        <div className="w-1/2 mx-auto text-white">
+          <h3 className="font-bold text-6xl">Atuação no mercado</h3>
+          <p className="my-8 font-normal text-2xl">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s. Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.
+          </p>
+          <button className="mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
+            <p>Faça seu orçamento agora!</p>
+          </button>
+        </div>
+      </div>
+      {/* Cases de sucesso */}
+      <div>
+        <div className="bg-white p-16">
+          <h2 className="text-black text-center font-bold text-6xl">
+            Cases de sucesso
+          </h2>
+
+          <div className="flex justify-between my-16">
+            <SuccessCase CompanyText="Empresa" />
+            <SuccessCase CompanyText="Empresa" />
+            <SuccessCase CompanyText="Empresa" />
+          </div>
         </div>
       </div>
     </div>
