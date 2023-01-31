@@ -1,5 +1,10 @@
 import Navbar from '../components/Navbar'
-import { CaretDown, Lightning } from 'phosphor-react'
+import {
+  Barricade,
+  CaretDown,
+  Lightning,
+  ShieldCheckered
+} from 'phosphor-react'
 
 import bannerOne from './../assets/banner-1.png'
 import logoImage from './../assets/logo-jm.png'
@@ -47,19 +52,19 @@ export default function Home() {
         <p className="text-black text-center font-normal text-3xl">
           Saiba mais sobre os principais serviços que oferecemos!
         </p>
-        <div className="flex justify-between">
+        <div className="flex justify-evenly mt-16">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
             text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <ServiceCard
-            image={<Lightning size={80} color="#FFF" />}
+            image={<Barricade size={80} color="#FFF" />}
             text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
           />
           <ServiceCard
-            image={<Lightning size={80} color="#FFF" />}
+            image={<ShieldCheckered size={80} color="#FFF" />}
             text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />

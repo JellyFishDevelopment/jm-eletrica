@@ -5,7 +5,7 @@ import logoImg from '../assets/logo-jm.png'
 export default function Navbar() {
   const [open, setOpen] = useState(true)
   return (
-    <nav className="p-4 font-light text-xl fixed w-full bg-white z-10">
+    <nav className="p-4 font-light text-xl  w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <img src={logoImg} className="w-24 h-24" alt="Logo JM" />
         <button
