@@ -5,7 +5,7 @@ import logoImg from '../assets/logo-jm.png'
 export default function Navbar() {
   const [open, setOpen] = useState(true)
   return (
-    <nav className="p-4 font-light text-lg">
+    <nav className="p-4 font-light text-xl fixed w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <img src={logoImg} className="w-24 h-24" alt="Logo JM" />
         <button
@@ -30,7 +30,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-lg  md:border-0 md:bg-white  ">
+          <div className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-2xl  md:border-0 md:bg-white  ">
             <Link className="my-2 text-center" to="/">
               Início
             </Link>
