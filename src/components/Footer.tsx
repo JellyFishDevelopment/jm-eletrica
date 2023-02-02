@@ -53,7 +53,7 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-600 flex flex-col dark:text-gray-400">
               <li className="mb-4 ">(13) 3202-1250</li>
-              <li className="mb-4 ">(13) 99191-5959</li>
+              <li className="mb-4 ">(13) 99646-2507</li>
               <li className="mb-4 ">emailjm@eletrica.com</li>
             </ul>
           </div>

@@ -55,8 +55,7 @@ export default function Home() {
         <div className="flex justify-evenly mt-16">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            text="Consultoria de Serviços"
           />
           <ServiceCard
             image={<Barricade size={80} color="#FFF" />}

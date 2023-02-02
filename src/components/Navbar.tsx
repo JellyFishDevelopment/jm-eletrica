@@ -50,7 +50,7 @@ export default function Navbar() {
             open ? 'block' : 'hidden'
           } text-center w-full md:w-auto font-bold text-white px-8 py-4 rounded-xl bg-[#969696]`}
         >
-          (13) 3202-1250
+          (13) 99646-2507
         </p>
       </div>
     </nav>

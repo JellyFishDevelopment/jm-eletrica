@@ -55,7 +55,7 @@ export default function Services() {
         <div className="flex justify-evenly my-16">
           <CartaoServico
             image={<Lightning size={80} color="#FFF" />}
-            title="Laudos"
+            title="Consultoria"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
@@ -73,7 +73,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <CartaoServico
             image={<Barricade size={80} color="#FFF" />}
-            title="Manutenção"
+            title="Projetos Elétricos"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
@@ -81,7 +81,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
         <div className="flex justify-evenly my-16">
           <CartaoServico
             image={<ShieldCheckered size={80} color="#FFF" />}
-            title="Segurança"
+            title="Laudos Técnicos"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
