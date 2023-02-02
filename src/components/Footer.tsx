@@ -10,7 +10,7 @@ export default function Footer() {
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Atendimento na Baixada Santista
           </h2>
-          <ul className="text-gray-600 flex flex-col dark:text-gray-400">
+          <ul className="text-black flex flex-col ">
             <li className="mb-4 ">Santos</li>
             <li className="mb-4 ">São Vicente</li>
             <li className="mb-4 ">Praia Grande</li>
@@ -21,7 +21,7 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Institucional
             </h2>
-            <ul className="text-gray-600 flex flex-col dark:text-gray-400">
+            <ul className="text-black flex flex-col ">
               <Link className="mb-4 hover:underline" to="/">
                 Sobre nós
               </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Serviços
             </h2>
-            <ul className="text-gray-600 flex flex-col dark:text-gray-400">
+            <ul className="text-black flex flex-col ">
               <li className="mb-4 ">Sobre nós</li>
               <li className="mb-4 ">Contato</li>
               <li className="mb-4 ">Serviços</li>
@@ -51,7 +51,7 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Contato
             </h2>
-            <ul className="text-gray-600 flex flex-col dark:text-gray-400">
+            <ul className="text-black flex flex-col ">
               <li className="mb-4 ">(13) 3202-1250</li>
               <li className="mb-4 ">(13) 99191-5959</li>
               <li className="mb-4 ">emailjm@eletrica.com</li>
