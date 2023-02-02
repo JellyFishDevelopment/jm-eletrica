@@ -30,7 +30,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-2xl  md:border-0 md:bg-white  ">
+          <div className="flex flex-col md:flex-row md:space-x-16 md:mt-0 md:text-2xl  md:border-0 md:bg-white  ">
             <Link className="my-2 text-center" to="/">
               Início
             </Link>
