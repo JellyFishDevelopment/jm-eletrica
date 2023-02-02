@@ -14,6 +14,8 @@ import SuccessCase from '../components/SuccessCase'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
 
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 export default function Home() {
   return (
     <div>
@@ -38,14 +40,23 @@ export default function Home() {
         <button className="absolute hidden sm:block bottom-0 left-1/4 transform -translate-x-full bg-[#969696] text-white p-6 mb-8 rounded-full font-bold sm:text-lg md:text-xl">
           <p>Faça seu orçamento agora!</p>
         </button>
-        <CaretDown
-          className="hidden lg:block absolute bottom-0 left-1/2 transform -translate-x-1/2"
-          size={64}
-          color="#fff"
-        />
+        <Link
+          to="#servicos"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="cursor-pointer"
+        >
+          <CaretDown
+            className="hidden lg:block absolute bottom-12 left-1/2 transform -translate-x-1/2"
+            size={64}
+            color="#fff"
+          />
+        </Link>
       </div>
       {/* Principais serviços */}
-      <div className="bg-white p-16">
+      <div id="#servicos" className="bg-white p-16">
         <h2 className="text-black text-center font-bold text-6xl">
           Principais serviços
         </h2>
