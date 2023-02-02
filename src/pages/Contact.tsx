@@ -1,9 +1,58 @@
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 export default function Contact() {
   return (
-    <div className="w-32 h-32 bg-violet-600">
-      <h1>Contact</h1>
+    <div>
+      {/* Banner */}
+      <div className="bg-fourth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
+        <h2 className="font-bold text-center my-10 text-8xl">Contato</h2>
+        <p className="font-light text-center text-3xl">
+          Entre em contato conosco para fazer seu orçamento, é simples e
+          gratuito!
+        </p>
+      </div>
+      {/* Formulário */}
+      <div className="bg-[#969696] p-12">
+        <form className="bg-[#818181] w-1/3 mx-auto p-8 flex flex-col">
+          <div className="flex justify-between my-2  ">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nome:"
+              className="p-4 w-1/2 mr-2 outline-none  bg-white"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Telefone:"
+              className="p-4 w-1/2 ml-2 outline-none bg-white"
+            />
+          </div>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email:"
+            className="p-4 my-2 outline-none bg-white"
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Assunto:"
+            className="p-4 my-2 outline-none bg-white"
+          />
+          <textarea
+            className="p-4 my-2 outline-none bg-white resize-none"
+            name="message"
+            placeholder="Mensagem:"
+          ></textarea>
+          <button className="p-4 my-2 outline-none bg-[#5C5C5C] text-white">
+            Enviar
+          </button>
+        </form>
+      </div>
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
