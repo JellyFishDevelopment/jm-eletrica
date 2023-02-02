@@ -3,6 +3,9 @@ import ServiceCard from '../components/ServiceCard'
 import laudoUm from '../assets/laudo-1.png'
 import laudoDois from '../assets/laudo-2.png'
 import laudoTres from '../assets/laudo-3.png'
+import imagemConsultoria from '../assets/consultorias.png'
+import imagemLaudo from '../assets/laudostecnicos.png'
+import imagemProjeto from '../assets/projetoseletricos.png'
 import CartaoServico from '../components/CartaoServico'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logoImage from './../assets/logo-jm.png'
@@ -60,14 +63,14 @@ export default function Services() {
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <img
-            src={laudoUm}
+            src={imagemConsultoria}
             className="rounded-full w-96 h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
         </div>
         <div className="flex justify-evenly my-24">
           <img
-            src={laudoDois}
+            src={imagemProjeto}
             className="rounded-full w-96 h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
@@ -86,7 +89,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <img
-            src={laudoTres}
+            src={imagemLaudo}
             className="rounded-full w-96 h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
