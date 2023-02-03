@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 interface ServicosProps {
   image: React.ReactNode
   title: string
@@ -14,7 +16,7 @@ export default function CartaoServico(props: ServicosProps) {
         type="button"
         className="px-4 py-6 mt-4 font-regular text-base bg-white text-black rounded-full"
       >
-        Saiba mais sobre os nossos serviços
+        <Link to="/laudos">Saiba mais sobre os nossos serviços</Link>
       </button>
     </div>
   )
