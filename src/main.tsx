@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import ErrorPage from './pages/ErrorPage'
 import Laudos from './pages/Laudos'
+import Trabalhos from './pages/Trabalhos'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: 'laudos',
         element: <Laudos />
+      },
+      {
+        path: 'trabalhos',
+        element: <Trabalhos />
       }
     ]
   }

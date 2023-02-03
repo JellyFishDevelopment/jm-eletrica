@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import logoImage from './../assets/logo-jm.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { Link } from 'react-router-dom'
 
 export default function About() {
   const carousel = useRef()
@@ -140,7 +141,7 @@ export default function About() {
           </motion.div>
         </motion.div>
         <button className="bg-[#5C5C5C] w-1/2  text-white font-medium rounded-xl p-4 my-4">
-          Ver mais trabalhos
+          <Link to="/trabalhos">Ver mais trabalhos</Link>
         </button>
       </div>
       <BannerContato />
