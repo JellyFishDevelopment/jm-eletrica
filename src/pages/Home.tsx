@@ -56,14 +56,14 @@ export default function Home() {
         </Link>
       </div>
       {/* Principais serviços */}
-      <div id="#servicos" className="bg-white p-16">
-        <h2 className="text-black text-center font-bold text-6xl">
+      <div id="#servicos" className="bg-white p-12 sm:p-16">
+        <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
           Principais serviços
         </h2>
         <p className="text-black text-center font-normal text-3xl">
           Saiba mais sobre os principais serviços que oferecemos!
         </p>
-        <div className="flex justify-evenly mt-16">
+        <div className="flex flex-col justify-center sm:flex-row sm:justify-evenly mt-16">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
             text="Consultoria de Serviços"
@@ -81,10 +81,14 @@ export default function Home() {
         </div>
       </div>
       {/* Atuação no mercado */}
-      <div className="flex justify-start p-16 bg-second-banner w-full bg-no-repeat bg-cover">
-        <img src={logoImage} className="w-80 h-80 mx-auto" alt="Logo" />
-        <div className="w-1/2 mx-auto text-white">
-          <h3 className="font-bold text-6xl">Atuação no mercado</h3>
+      <div className="flex flex-col sm:flex-row justify-start p-16 bg-second-banner w-full bg-no-repeat bg-cover">
+        <img
+          src={logoImage}
+          className="w-40 h-40 sm:w-80 sm:h-80 mx-auto"
+          alt="Logo"
+        />
+        <div className="text-center sm:w-1/2 sm:text-left mx-auto text-white">
+          <h3 className="font-bold text-4xl sm:text-6xl">Atuação no mercado</h3>
           <p className="my-8 font-normal text-2xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -92,7 +96,7 @@ export default function Home() {
             printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s.
           </p>
-          <button className="mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
+          <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
             <p>Faça seu orçamento agora!</p>
           </button>
         </div>
@@ -100,11 +104,11 @@ export default function Home() {
       {/* Cases de sucesso */}
       <div>
         <div className="bg-white p-16">
-          <h2 className="text-black text-center font-bold text-6xl">
+          <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
             Cases de sucesso
           </h2>
 
-          <div className="flex justify-evenly my-16">
+          <div className="flex flex-col sm:flex-row justify-evenly my-16">
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
