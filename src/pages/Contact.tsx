@@ -6,7 +6,9 @@ export default function Contact() {
     <div>
       {/* Banner */}
       <div className="bg-fourth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
-        <h2 className="font-bold text-center my-10 text-8xl">Contato</h2>
+        <h2 className="font-bold text-center my-10 text-5xl sm:text-8xl">
+          Contato
+        </h2>
         <p className="font-light text-center text-3xl">
           Entre em contato conosco para fazer seu orçamento, é simples e
           gratuito!
@@ -14,7 +16,7 @@ export default function Contact() {
       </div>
       {/* Formulário */}
       <div className="bg-[#969696] p-12">
-        <form className="bg-[#818181] w-1/3 mx-auto p-8 flex flex-col">
+        <form className="bg-[#818181] sm:w-1/3 mx-auto p-8 flex flex-col">
           <div className="flex justify-between my-2  ">
             <input
               type="text"
