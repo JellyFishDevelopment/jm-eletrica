@@ -34,9 +34,9 @@ export default function Services() {
       />
       <div className="pt-16 h-96 text-white bg-[#818181]">
         {/* Título */}
-        <h1 className="text-center font-bold text-8xl">Serviços</h1>
+        <h1 className="text-center font-bold text-6xl sm:text-8xl">Serviços</h1>
         {/* Serviços */}
-        <div className="flex justify-evenly mt-32">
+        <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
             text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -55,7 +55,7 @@ export default function Services() {
         </div>
         {/* Serviços + Imagens */}
 
-        <div className="flex justify-evenly my-16">
+        <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
           <CartaoServico
             image={<Lightning size={80} color="#FFF" />}
             title="Consultoria"
@@ -64,14 +64,14 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <img
             src={imagemConsultoria}
-            className="rounded-full w-96 h-96"
+            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
         </div>
-        <div className="flex justify-evenly my-24">
+        <div className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24">
           <img
             src={imagemProjeto}
-            className="rounded-full w-96 h-96"
+            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
           <CartaoServico
@@ -81,7 +81,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
         </div>
-        <div className="flex justify-evenly my-16">
+        <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
           <CartaoServico
             image={<ShieldCheckered size={80} color="#FFF" />}
             title="Laudos Técnicos"
@@ -90,23 +90,23 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           />
           <img
             src={imagemLaudo}
-            className="rounded-full w-96 h-96"
+            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
         </div>
 
         {/* Carousel */}
         <div className="bg-[#969696] p-8">
-          <h2 className="text-white text-center font-bold text-7xl">
+          <h2 className="text-white text-center font-bold text-5xl sm:text-7xl">
             Saiba mais sobre nossos serviços
           </h2>
           <motion.div
             ref={carousel}
-            className="cursor-grab overflow-hidden w-3/4 mx-auto"
+            className="cursor-grab overflow-hidden w-[90%] sm:w-3/4 mx-auto"
             whileTap={{ cursor: 'grabbing' }}
           >
             <motion.div
-              className="flex justify-center"
+              className="flex"
               drag="x"
               dragConstraints={{ right: 0, left: -width }}
             >
