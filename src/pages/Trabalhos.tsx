@@ -20,20 +20,22 @@ export default function Trabalhos() {
       />
       {/* Cabeçalho */}
       <div className="bg-fifth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
-        <h2 className="font-bold text-center my-10 text-8xl">
+        <h2 className="font-bold text-center my-10 text-5xl sm:text-8xl">
           Trabalhos realizados
         </h2>
-        <p className="font-light text-center text-3xl">
+        <p className="font-light text-center text-xl sm:text-3xl">
           Aenean fermentum eget dolor sit amet sagittis. Aenean ex diam, ornare
           in leo elementum, aliquet vehicula tortor. Ut vehicula arcu quis
           tellus commodo, luctus varius lacus laoreet.
         </p>
       </div>
       {/* Trabalhos */}
-      <div className="p-16">
-        <div className="bg-[#747474] w-[80%] my-8 p-8 mx-auto rounded-xl flex justify-between">
-          <div className="mt-8 mx-8">
-            <h3 className="font-bold text-white text-4xl">Condomínio do Sol</h3>
+      <div className="p-8 sm:p-16">
+        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+          <div className="my-4 sm:mt-8 mx-8">
+            <h3 className="font-bold text-white text-2xl sm:text-4xl">
+              Condomínio do Sol
+            </h3>
             <span className="font-bold text-green-500 text-2xl ">
               Condomínio
             </span>
@@ -46,8 +48,8 @@ export default function Trabalhos() {
           </div>
           <img src={trabalhoUm} />
         </div>
-        <div className="bg-[#747474] w-[80%] my-8 p-8 mx-auto rounded-xl flex justify-between">
-          <div className="mt-8 mx-8">
+        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+          <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-4xl">
               Empório e padaria Rodrigues - Unidade São Vicente
             </h3>
@@ -61,8 +63,8 @@ export default function Trabalhos() {
           </div>
           <img src={trabalhoDois} />
         </div>
-        <div className="bg-[#747474] w-[80%] my-8 p-8 mx-auto rounded-xl flex justify-between">
-          <div className="mt-8 mx-8">
+        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+          <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-4xl">
               San Diego Pizzas e Esfirraria
             </h3>
