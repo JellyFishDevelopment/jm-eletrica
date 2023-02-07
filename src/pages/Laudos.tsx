@@ -16,9 +16,9 @@ export default function Laudos() {
         avatar={logoImage}
       />
       {/* Cabeçalho */}
-      <div className="p-16 h-96 text-white bg-[#818181]">
-        <h1 className="text-center font-bold text-8xl">Laudos</h1>
-        <p className="font-light text-center text-4xl mt-8">
+      <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">
+        <h1 className="text-center font-bold text-5xl sm:text-8xl">Laudos</h1>
+        <p className="font-light text-center text-xl sm:text-4xl mt-8">
           Para que os laudos servem. Aenean fermentum eget dolor sit amet
           sagittis. Aenean ex diam, ornare in leo elementum, aliquet vehicula
           tortor. Ut vehicula arcu quis tellus commodo, luctus varius lacus
@@ -26,8 +26,8 @@ export default function Laudos() {
         </p>
       </div>
       {/* Laudos */}
-      <div className="grid grid-cols-2 gap-4 my-32">
-        <div className="bg-[#969696] mx-auto text-white p-8  w-3/4 rounded-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-32">
+        <div className="bg-[#969696] mx-auto text-white p-8  w-3/4 sm:w-3/4 rounded-xl">
           <h3 className="font-bold text-center text-4xl">SPDA</h3>
           <p className="font-light text-xl my-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -35,7 +35,7 @@ export default function Laudos() {
             ever since the 1500s.
           </p>
         </div>
-        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 rounded-xl">
+        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 sm:w-3/4 rounded-xl">
           <h3 className="font-bold text-center text-4xl">NR10</h3>
           <p className="font-light text-xl my-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -43,7 +43,7 @@ export default function Laudos() {
             ever since the 1500s.
           </p>
         </div>
-        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 rounded-xl">
+        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 sm:w-3/4 rounded-xl">
           <h3 className="font-bold text-center text-4xl">Termografia</h3>
           <p className="font-light text-xl my-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -51,7 +51,7 @@ export default function Laudos() {
             ever since the 1500s.
           </p>
         </div>
-        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 rounded-xl">
+        <div className="bg-[#969696] mx-auto text-white p-8 w-3/4 sm:w-3/4 rounded-xl">
           <h3 className="font-bold text-center text-4xl">
             Qualidade de energia
           </h3>
