@@ -54,8 +54,10 @@ export default function About() {
       />
       {/* Sobre nós */}
       <div className="bg-[#969696] p-8 ">
-        <h2 className="font-bold text-8xl text-white text-center">Sobre nós</h2>
-        <div className="text-white p-16 bg-[#B6B5B0] rounded-xl w-3/4 mx-auto my-16">
+        <h2 className="font-bold text-6xl sm:text-8xl text-white text-center">
+          Sobre nós
+        </h2>
+        <div className="text-white p-8 sm:p-16 bg-[#B6B5B0] rounded-xl sm:w-3/4 mx-auto my-16">
           <h3 className="font-normal text-7xl">JM Elétrica</h3>
           <p className="font-bold text-4xl">Engenharia elétrica de qualidade</p>
           <p className="font-light text-3xl my-16">
@@ -78,25 +80,25 @@ export default function About() {
         </div>
       </div>
       {/* Imagens elétrica */}
-      <div className="p-8 bg-white flex justify-evenly">
+      <div className="p-8 bg-white flex flex-col sm:flex-row justify-evenly">
         <img
-          className="rounded-[50px]"
+          className="rounded-[50px] my-2"
           src={eletricaUm}
           alt="Homem operando o notebook"
         />
         <img
-          className="rounded-[50px]"
+          className="rounded-[50px] my-2"
           src={eletricaDois}
           alt="Homem operando cabos"
         />
       </div>
       {/* Experiência e agilidade */}
-      <div className="p-16 bg-[#969696]">
-        <h2 className="font-bold text-8xl text-white text-center">
+      <div className="p-8 sm:p-16 bg-[#969696]">
+        <h2 className="font-bold text-5xl sm:text-8xl text-white text-center">
           Experiência e agilidade
         </h2>
-        <div className="flex justify-between text-white my-8">
-          <p className="w-[750px] text-center font-light text-4xl mx-2">
+        <div className="flex flex-col sm:flex-row justify-between text-white my-8">
+          <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             aliquam pellentesque nunc vel molestie. Proin eleifend consectetur
             mauris semper volutpat. Cras eu feugiat leo, ac laoreet odio. Duis
@@ -105,7 +107,7 @@ export default function About() {
             sem tristique luctus. Quisque mattis facilisis mollis. Curabitur et
             egestas eros. Proin hendrerit imperdiet vulputate.
           </p>
-          <p className="w-[750px] text-center font-light text-4xl mx-2">
+          <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             aliquam pellentesque nunc vel molestie. Proin eleifend consectetur
             mauris semper volutpat. Cras eu feugiat leo, ac laoreet odio. Duis
