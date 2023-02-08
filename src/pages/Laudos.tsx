@@ -14,6 +14,7 @@ export default function Laudos() {
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
+        placeholder="Mensagem:"
       />
       {/* Cabeçalho */}
       <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">

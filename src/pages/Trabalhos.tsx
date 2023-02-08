@@ -17,6 +17,7 @@ export default function Trabalhos() {
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
+        placeholder="Mensagem:"
       />
       {/* Cabeçalho */}
       <div className="bg-fifth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
