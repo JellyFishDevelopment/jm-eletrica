@@ -26,6 +26,7 @@ export default function Home() {
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
+        placeholder="Mensagem:"
       />
       {/* Banner principal */}
       <div className="relative text-center">

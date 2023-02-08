@@ -31,6 +31,7 @@ export default function Services() {
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
+        placeholder="Mensagem:"
       />
       <div className="pt-16 h-96 text-white bg-[#818181]">
         {/* Título */}

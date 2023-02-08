@@ -51,6 +51,7 @@ export default function About() {
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
+        placeholder="Mensagem:"
       />
       {/* Sobre nós */}
       <div className="bg-[#969696] p-8 ">
