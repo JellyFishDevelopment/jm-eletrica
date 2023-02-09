@@ -48,7 +48,7 @@ export default function Services() {
           />
           <ServiceCard
             image={<ShieldCheckered size={80} color="#FFF" />}
-            text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas, garantindo maior segurança para os usuários "
+            text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
           />
         </div>
         {/* Serviços + Imagens */}
@@ -83,7 +83,7 @@ export default function Services() {
           <CartaoServico
             image={<ShieldCheckered size={80} color="#FFF" />}
             title="Laudos Técnicos"
-            description="O Laudo Técnico nada mais é que um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
+            description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
             link="/laudos"
           />
           <img
