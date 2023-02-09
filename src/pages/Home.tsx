@@ -1,8 +1,8 @@
 import {
-  Barricade,
   CaretDown,
+  ClipboardText,
   Lightning,
-  ShieldCheckered
+  NotePencil,
 } from 'phosphor-react'
 
 import bannerOne from './../assets/banner-1.png'
@@ -73,7 +73,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <ServiceCard
-              image={<Lightning size={80} color="#FFF" />}
+              image={<NotePencil size={80} color="#FFF" />}
               text="Consultoria de Serviços"
             />
           </motion.div>
@@ -84,7 +84,7 @@ export default function Home() {
             transition={{ duration: 0.7 }}
           >
             <ServiceCard
-              image={<Barricade size={80} color="#FFF" />}
+              image={<Lightning size={80} color="#FFF" />}
               text="Projetos elétricos"
             />
           </motion.div>
@@ -95,7 +95,7 @@ export default function Home() {
             transition={{ duration: 0.9 }}
           >
             <ServiceCard
-              image={<ShieldCheckered size={80} color="#FFF" />}
+              image={<ClipboardText size={80} color="#FFF" />}
               text="Laudos Técnicos"
             />
           </motion.div>

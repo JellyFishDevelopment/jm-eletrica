@@ -1,4 +1,4 @@
-import { Barricade, Lightning, ShieldCheckered } from 'phosphor-react'
+import { ClipboardText, Lightning, NotePencil  } from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
 import laudoUm from '../assets/laudo-1.png'
 import laudoDois from '../assets/laudo-2.png'
@@ -39,15 +39,15 @@ export default function Services() {
         {/* Serviços */}
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <ServiceCard
-            image={<Lightning size={80} color="#FFF" />}
+            image={<NotePencil size={80} color="#FFF" />}
             text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
           />
           <ServiceCard
-            image={<Barricade size={80} color="#FFF" />}
+            image={<Lightning size={80} color="#FFF" />}
             text="Atuamos no setor de projetos elétricos, de modo a garantir que todas as etapas do projeto, sejam executadas de maneira adequada, visando sempre a qualidade e a segurança, baseando-se nas normas regulamentadoras e boas práticas da engenharia."
           />
           <ServiceCard
-            image={<ShieldCheckered size={80} color="#FFF" />}
+            image={<ClipboardText size={80} color="#FFF" />}
             text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
           />
         </div>
@@ -55,7 +55,7 @@ export default function Services() {
 
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
           <CartaoServico
-            image={<Lightning size={80} color="#FFF" />}
+            image={<NotePencil size={80} color="#FFF" />}
             title="Consultoria"
             description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
             link="/consultoria"
@@ -73,7 +73,7 @@ export default function Services() {
             alt="Imagem de laudo e instalações elétricas"
           />
           <CartaoServico
-            image={<Barricade size={80} color="#FFF" />}
+            image={<Lightning size={80} color="#FFF" />}
             title="Projetos Elétricos"
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
             link="/projetos"
@@ -81,7 +81,7 @@ export default function Services() {
         </div>
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
           <CartaoServico
-            image={<ShieldCheckered size={80} color="#FFF" />}
+            image={<ClipboardText size={80} color="#FFF" />}
             title="Laudos Técnicos"
             description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
             link="/laudos"

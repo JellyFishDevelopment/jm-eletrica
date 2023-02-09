@@ -33,10 +33,10 @@ export default function Trabalhos() {
         <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
           <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-2xl sm:text-4xl">
-              Condomínio do Sol
+              San Diego Pizzas e Esfirraria
             </h3>
             <span className="font-bold text-green-500 text-2xl ">
-              Condomínio
+              Pizzaria Local
             </span>
             <p className="font-bold text-white text-2xl mt-8">
               Serviços executado:
@@ -65,9 +65,11 @@ export default function Trabalhos() {
         <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
           <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-4xl">
-              San Diego Pizzas e Esfirraria
+              Condomínio do Sol
             </h3>
-            <span className="font-bold text-green-500 text-2xl ">Empresa</span>
+            <span className="font-bold text-green-500 text-2xl ">
+              Condomínio
+            </span>
             <p className="font-bold text-white text-2xl mt-8">
               Serviços executado:
             </p>
