@@ -25,9 +25,7 @@ export default function Trabalhos() {
           Trabalhos realizados
         </h2>
         <p className="font-light text-center text-xl sm:text-3xl">
-          Aenean fermentum eget dolor sit amet sagittis. Aenean ex diam, ornare
-          in leo elementum, aliquet vehicula tortor. Ut vehicula arcu quis
-          tellus commodo, luctus varius lacus laoreet.
+          Nesta página demonstramos alguns dos serviços prestados recentemente.
         </p>
       </div>
       {/* Trabalhos */}

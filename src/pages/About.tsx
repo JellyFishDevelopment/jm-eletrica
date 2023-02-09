@@ -62,13 +62,7 @@ export default function About() {
           <h3 className="font-normal text-7xl">JM Elétrica</h3>
           <p className="font-bold text-4xl">Engenharia elétrica de qualidade</p>
           <p className="font-light text-3xl my-16">
-            Aenean fermentum eget dolor sit amet sagittis. Aenean ex diam,
-            ornare in leo elementum, aliquet vehicula tortor. Ut vehicula arcu
-            quis tellus commodo, luctus varius lacus laoreet. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Suspendisse sed odio laoreet, porta neque ac, eleifend
-            nisi. Aenean finibus eu libero quis vehicula. Donec laoreet elit in
-            maximus.
+            Nossa visão como empresa é manter a qualidade e excelência na Engenharia Elétrica, fornecendo serviços e soluções integradas para se tornar referência no mercado, desta forma conquistando confiança e entregando cada vez mais eficiência nos serviços prestados, integrando pessoas para somar e desenvolver um futuro melhor.
           </p>
           <div className="text-center">
             <button
@@ -100,22 +94,14 @@ export default function About() {
         </h2>
         <div className="flex flex-col sm:flex-row justify-between text-white my-8">
           <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            aliquam pellentesque nunc vel molestie. Proin eleifend consectetur
-            mauris semper volutpat. Cras eu feugiat leo, ac laoreet odio. Duis
-            interdum semper nisi in faucibus. Sed non ligula leo. Donec interdum
-            urna enim, nec rutrum lorem eleifend nec. Vestibulum porta varius
-            sem tristique luctus. Quisque mattis facilisis mollis. Curabitur et
-            egestas eros. Proin hendrerit imperdiet vulputate.
+            Me chamo Jair Melo e sou especialista em manutenção. Com 12 anos de experiência na área de manutenção industrial, atuo com projetos de melhoria industrial, comercial e laudos técnicos. 
+
+            Graduado em Engenharia Elétrica com ênfase em Eletrotécnica. Finalizando sua Pós Graduação em Gerenciamento de Projetos e Engenharia de Confiabilidade.
           </p>
           <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            aliquam pellentesque nunc vel molestie. Proin eleifend consectetur
-            mauris semper volutpat. Cras eu feugiat leo, ac laoreet odio. Duis
-            interdum semper nisi in faucibus. Sed non ligula leo. Donec interdum
-            urna enim, nec rutrum lorem eleifend nec. Vestibulum porta varius
-            sem tristique luctus. Quisque mattis facilisis mollis. Curabitur et
-            egestas eros. Proin hendrerit imperdiet vulputate.
+            Minha proposta é sempre dedicar meu tempo para entregar serviços com qualidade em tempo hábil, respeitando o meio ambiente e todos os protocolos de segurança. 
+
+            Oferecemos serviços variados de elétrica, então caso tenha alguma dúvida ou precise de algum outro serviço que não encontrou no site, entre em contato conosco!
           </p>
         </div>
       </div>

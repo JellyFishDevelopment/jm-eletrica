@@ -85,8 +85,7 @@ export default function Home() {
           >
             <ServiceCard
               image={<Barricade size={80} color="#FFF" />}
-              text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
+              text="Projetos elétricos"
             />
           </motion.div>
           <motion.div
@@ -97,8 +96,7 @@ export default function Home() {
           >
             <ServiceCard
               image={<ShieldCheckered size={80} color="#FFF" />}
-              text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+              text="Laudos Técnicos"
             />
           </motion.div>
         </div>
