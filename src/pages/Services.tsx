@@ -58,7 +58,7 @@ export default function Services() {
             image={<Lightning size={80} color="#FFF" />}
             title="Consultoria"
             description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
-            link="/"
+            link="/consultoria"
           />
           <img
             src={imagemConsultoria}
