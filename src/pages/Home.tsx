@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar'
 import {
   Barricade,
   CaretDown,
@@ -13,7 +12,7 @@ import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
-
+import { Link as LinkNav } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 export default function Home() {
@@ -39,7 +38,10 @@ export default function Home() {
           Serviços Elétricos JM
         </h2>
         <button className="absolute hidden sm:block bottom-0 left-1/4 transform -translate-x-full bg-[#969696] text-white p-6 mb-8 rounded-full font-bold sm:text-lg md:text-xl">
-          <p>Faça seu orçamento agora!</p>
+          <LinkNav to="/contact">
+            {' '}
+            <p>Faça seu orçamento agora!</p>
+          </LinkNav>
         </button>
         <Link
           to="#servicos"
@@ -98,7 +100,9 @@ export default function Home() {
             industry's standard dummy text ever since the 1500s.
           </p>
           <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
-            <p>Faça seu orçamento agora!</p>
+            <LinkNav to="/contact">
+              <p>Faça seu orçamento agora!</p>
+            </LinkNav>
           </button>
         </div>
       </div>
