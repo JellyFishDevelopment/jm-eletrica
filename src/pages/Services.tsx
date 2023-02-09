@@ -62,6 +62,7 @@ export default function Services() {
             title="Consultoria"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            link="/"
           />
           <img
             src={imagemConsultoria}
@@ -80,6 +81,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
             title="Projetos Elétricos"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            link="/trabalhos"
           />
         </div>
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
@@ -88,6 +90,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
             title="Laudos Técnicos"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            link="/laudos"
           />
           <img
             src={imagemLaudo}
