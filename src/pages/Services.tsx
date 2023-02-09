@@ -1,8 +1,11 @@
-import { ClipboardText, Lightning, NotePencil  } from 'phosphor-react'
+import { ClipboardText, Lightning, NotePencil } from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
 import laudoUm from '../assets/laudo-1.png'
 import laudoDois from '../assets/laudo-2.png'
 import laudoTres from '../assets/laudo-3.png'
+import laudoQuatro from '../assets/laudo-4.jpeg'
+import laudoCinco from '../assets/laudo-5.jpeg'
+import laudoSeis from '../assets/laudo-6.jpeg'
 import imagemConsultoria from '../assets/consultorias.png'
 import imagemLaudo from '../assets/laudostecnicos.png'
 import imagemProjeto from '../assets/projetoseletricos.png'
@@ -16,7 +19,14 @@ import { useState, useEffect, useRef } from 'react'
 export default function Services() {
   const carousel = useRef()
   const [width, setWidth] = useState(0)
-  const slides = [laudoUm, laudoDois, laudoTres]
+  const slides = [
+    laudoUm,
+    laudoDois,
+    laudoTres,
+    laudoQuatro,
+    laudoCinco,
+    laudoSeis
+  ]
 
   useEffect(() => {
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
