@@ -21,7 +21,7 @@ export default function Consultoria() {
         <h1 className="text-center font-bold text-5xl sm:text-8xl">
           Consultoria
         </h1>
-        <p className="font-light text-center text-xl sm:text-4xl mt-8">
+        <p className="font-light text-center text-xl sm:text-2xl mt-8">
           A consultoria elétrica tem como enfoque direcionar forma de economizar
           energia e dinheiro, sendo assim, essa consultoria tem como função
           encontrar as necessidades de cada empreendimento e auxiliá-lo a

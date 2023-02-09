@@ -21,7 +21,7 @@ export default function ProjetosEletricos() {
         <h1 className="text-center font-bold text-5xl sm:text-8xl">
           Projetos Elétricos
         </h1>
-        <p className="font-light text-center text-xl sm:text-4xl mt-8">
+        <p className="font-light text-center text-xl sm:text-2xl mt-8">
           O projeto elétrico é o conjunto de todas as informações necessárias
           para realizar o trabalho: cálculos, desenhos, gráficos, materiais e
           tudo mais que se refere a uma instalação ou equipamento elétrico

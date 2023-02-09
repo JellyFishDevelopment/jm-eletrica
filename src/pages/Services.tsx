@@ -76,7 +76,7 @@ export default function Services() {
             image={<Barricade size={80} color="#FFF" />}
             title="Projetos Elétricos"
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
-            link="/trabalhos"
+            link="/projetos"
           />
         </div>
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
