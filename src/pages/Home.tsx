@@ -14,6 +14,7 @@ import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
 import { Link as LinkNav } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -67,20 +68,41 @@ export default function Home() {
           Saiba mais sobre os principais serviços que oferecemos!
         </p>
         <div className="flex flex-col justify-center sm:flex-row sm:justify-evenly mt-16">
-          <ServiceCard
-            image={<Lightning size={80} color="#FFF" />}
-            text="Consultoria de Serviços"
-          />
-          <ServiceCard
-            image={<Barricade size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
+          >
+            <ServiceCard
+              image={<Lightning size={80} color="#FFF" />}
+              text="Consultoria de Serviços"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.7 }}
+          >
+            <ServiceCard
+              image={<Barricade size={80} color="#FFF" />}
+              text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
-          />
-          <ServiceCard
-            image={<ShieldCheckered size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+          >
+            <ServiceCard
+              image={<ShieldCheckered size={80} color="#FFF" />}
+              text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-          />
+            />
+          </motion.div>
         </div>
       </div>
       {/* Atuação no mercado */}
