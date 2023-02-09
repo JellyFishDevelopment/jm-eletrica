@@ -5,9 +5,13 @@ import logoImg from '../assets/logo-jm.png'
 export default function Navbar() {
   const [open, setOpen] = useState(true)
   return (
-    <nav className="p-4 font-light text-xl  w-full bg-white z-10">
+    <nav className="p-2 2xl:p-4 font-light text-xl  w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <img src={logoImg} className="w-24 h-24" alt="Logo JM" />
+        <img
+          src={logoImg}
+          className="w-16 h-16 2xl:w-24 2xl:h-24"
+          alt="Logo JM"
+        />
         <button
           onClick={() => setOpen(!open)}
           type="button"
@@ -30,7 +34,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex flex-col md:flex-row md:space-x-16 md:mt-0 md:text-2xl  md:border-0 md:bg-white  ">
+          <div className="flex flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
             <Link className="my-2 text-center" to="/">
               Início
             </Link>
@@ -48,7 +52,7 @@ export default function Navbar() {
         <p
           className={`${
             open ? 'block' : 'hidden'
-          } text-center w-full md:w-auto font-bold text-white px-8 py-4 rounded-xl bg-[#969696]`}
+          } text-center w-full md:w-auto lg:text-xl 2xl:text-2xl font-bold text-white p-4 2xl:px-8 2xl:py-4 rounded-xl bg-[#969696]`}
         >
           (13) 99646-2507
         </p>
