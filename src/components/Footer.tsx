@@ -31,7 +31,7 @@ export default function Footer() {
               <Link className="mb-4 hover:underline" to="/">
                 Serviços
               </Link>
-              <Link className="mb-4 hover:underline" to="/">
+              <Link className="mb-4 hover:underline" to="/Contact">
                 Orçamento
               </Link>
             </ul>
@@ -41,10 +41,9 @@ export default function Footer() {
               Serviços
             </h2>
             <ul className="text-black flex flex-col ">
-              <li className="mb-4 ">Sobre nós</li>
-              <li className="mb-4 ">Contato</li>
-              <li className="mb-4 ">Serviços</li>
-              <li className="mb-4 ">Orçamento</li>
+              <li className="mb-4 ">Consultoria</li>
+              <li className="mb-4 ">Projetos Elétricos</li>
+              <li className="mb-4 ">Laudos Técnicos</li>
             </ul>
           </div>
           <div>
@@ -52,7 +51,6 @@ export default function Footer() {
               Contato
             </h2>
             <ul className="text-black flex flex-col ">
-              <li className="mb-4 ">(13) 3202-1250</li>
               <li className="mb-4 ">(13) 99646-2507</li>
               <li className="mb-4 ">emailjm@eletrica.com</li>
             </ul>

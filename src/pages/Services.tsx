@@ -40,18 +40,15 @@ export default function Services() {
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
           />
           <ServiceCard
             image={<Barricade size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
+            text="Atuamos no setor de projetos elétricos, de modo a garantir que todas as etapas do projeto, sejam executadas de maneira adequada, visando sempre a qualidade e a segurança, baseando-se nas normas regulamentadoras e boas práticas da engenharia."
           />
           <ServiceCard
             image={<ShieldCheckered size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas, garantindo maior segurança para os usuários "
           />
         </div>
         {/* Serviços + Imagens */}
@@ -60,8 +57,7 @@ export default function Services() {
           <CartaoServico
             image={<Lightning size={80} color="#FFF" />}
             title="Consultoria"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
             link="/"
           />
           <img
@@ -79,8 +75,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           <CartaoServico
             image={<Barricade size={80} color="#FFF" />}
             title="Projetos Elétricos"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
             link="/trabalhos"
           />
         </div>
@@ -88,8 +83,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           <CartaoServico
             image={<ShieldCheckered size={80} color="#FFF" />}
             title="Laudos Técnicos"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="O Laudo Técnico nada mais é que um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
             link="/laudos"
           />
           <img
