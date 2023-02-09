@@ -48,8 +48,7 @@ export default function Services() {
           />
           <ServiceCard
             image={<ShieldCheckered size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas, garantindo maior segurança para os usuários "
           />
         </div>
         {/* Serviços + Imagens */}
@@ -58,8 +57,7 @@ export default function Services() {
           <CartaoServico
             image={<Lightning size={80} color="#FFF" />}
             title="Consultoria"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
           />
           <img
             src={imagemConsultoria}
@@ -76,16 +74,14 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
           <CartaoServico
             image={<Barricade size={80} color="#FFF" />}
             title="Projetos Elétricos"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
           />
         </div>
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
           <CartaoServico
             image={<ShieldCheckered size={80} color="#FFF" />}
             title="Laudos Técnicos"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            description="O Laudo Técnico nada mais é que um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
           />
           <img
             src={imagemLaudo}
