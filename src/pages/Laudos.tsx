@@ -20,10 +20,7 @@ export default function Laudos() {
       <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">
         <h1 className="text-center font-bold text-5xl sm:text-8xl">Laudos</h1>
         <p className="font-light text-center text-xl sm:text-4xl mt-8">
-          Para que os laudos servem. Aenean fermentum eget dolor sit amet
-          sagittis. Aenean ex diam, ornare in leo elementum, aliquet vehicula
-          tortor. Ut vehicula arcu quis tellus commodo, luctus varius lacus
-          laoreet.{' '}
+          O laudo elétrico é um relatório que te traz um panorama geral sobre a sua instalação elétrica. A partir dele é possível entender as necessidades e inconformidades do sistema, te trazendo pontos de melhoria e te garantindo maior segurança. Sabemos que a energia elétrica é uma capaz de causar danos físicos e materiais.{' '}
         </p>
       </div>
       {/* Laudos */}
