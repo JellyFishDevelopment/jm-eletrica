@@ -7,11 +7,13 @@ export default function Navbar() {
   return (
     <nav className="p-2 2xl:p-4 font-light text-xl  w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <img
-          src={logoImg}
-          className="w-16 h-16 2xl:w-24 2xl:h-24"
-          alt="Logo JM"
-        />
+        <Link to="/">
+          <img
+            src={logoImg}
+            className="w-16 h-16 2xl:w-24 2xl:h-24"
+            alt="Logo JM"
+          />
+        </Link>
         <button
           onClick={() => setOpen(!open)}
           type="button"
