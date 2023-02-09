@@ -29,16 +29,18 @@ export default function Home() {
         placeholder="Mensagem:"
       />
       {/* Banner principal */}
-      <div className="relative text-center">
-        <img
-          src={bannerOne}
-          className="h-full w-full"
-          alt="Imagem elétrica com fios azuis"
-        />
-        <h2 className="absolute top-1/4 sm:top-1/2 left-1/2 transform -translate-x-1/2 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
-          Serviços Elétricos JM
-        </h2>
-        <button className="absolute hidden sm:block bottom-0 left-1/4 transform -translate-x-full bg-[#969696] text-white p-6 mb-8 rounded-full font-bold sm:text-lg md:text-xl">
+      <div className="bg-first-banner px-8 pb-8 pt-16 w-full flex flex-col items-center  bg-cover bg-no-repeat  text-white">
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
+          <h2 className="mt-16 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
+            Serviços Elétricos JM
+          </h2>
+        </motion.div>
+        <button className="self-start hidden sm:block  bg-[#969696] text-white p-6 mt-32 rounded-full font-bold sm:text-lg md:text-xl">
           <LinkNav to="/contact">
             {' '}
             <p>Faça seu orçamento agora!</p>
@@ -52,11 +54,7 @@ export default function Home() {
           duration={500}
           className="cursor-pointer"
         >
-          <CaretDown
-            className="hidden lg:block absolute bottom-12 left-1/2 transform -translate-x-1/2"
-            size={64}
-            color="#fff"
-          />
+          <CaretDown className="hidden lg:block " size={64} color="#fff" />
         </Link>
       </div>
       {/* Principais serviços */}
@@ -106,27 +104,37 @@ export default function Home() {
         </div>
       </div>
       {/* Atuação no mercado */}
-      <div className="flex flex-col sm:flex-row justify-start p-16 bg-second-banner w-full bg-no-repeat bg-cover">
-        <img
-          src={logoImage}
-          className="w-40 h-40 sm:w-80 sm:h-80 mx-auto"
-          alt="Logo"
-        />
-        <div className="text-center sm:w-1/2 sm:text-left mx-auto text-white">
-          <h3 className="font-bold text-4xl sm:text-6xl">Atuação no mercado</h3>
-          <p className="my-8 font-normal text-2xl">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.
-          </p>
-          <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
-            <LinkNav to="/contact">
-              <p>Faça seu orçamento agora!</p>
-            </LinkNav>
-          </button>
-        </div>
+      <div className=" p-16 bg-second-banner w-full bg-no-repeat bg-cover">
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="flex flex-col sm:flex-row justify-between"
+        >
+          <img
+            src={logoImage}
+            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto"
+            alt="Logo"
+          />
+          <div className="text-center sm:w-1/2 sm:text-left mx-auto text-white">
+            <h3 className="font-bold text-4xl sm:text-6xl">
+              Atuação no mercado
+            </h3>
+            <p className="my-8 font-normal text-2xl">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s. Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.
+            </p>
+            <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
+              <LinkNav to="/contact">
+                <p>Faça seu orçamento agora!</p>
+              </LinkNav>
+            </button>
+          </div>
+        </motion.div>
       </div>
       {/* Cases de sucesso */}
       <div>
@@ -135,11 +143,17 @@ export default function Home() {
             Cases de sucesso
           </h2>
 
-          <div className="flex flex-col sm:flex-row justify-evenly my-16">
+          <motion.div
+            initial={{ opacity: 0, y: -90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+            className="flex flex-col sm:flex-row justify-evenly my-16"
+          >
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
             <SuccessCase CompanyText="Empresa" />
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* Banner fale conosco */}
