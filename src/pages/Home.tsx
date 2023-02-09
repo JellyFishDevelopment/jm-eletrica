@@ -2,6 +2,7 @@ import { CaretDown, ClipboardText, Lightning, NotePencil } from 'phosphor-react'
 
 import bannerOne from './../assets/banner-1.png'
 import logoImage from './../assets/logo-jm.png'
+import logoImageFundo from './../assets/logo-jm-fundo.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
@@ -106,8 +107,8 @@ export default function Home() {
           className="flex flex-col sm:flex-row justify-between"
         >
           <img
-            src={logoImage}
-            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto"
+            src={logoImageFundo}
+            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto rounded-full"
             alt="Logo"
           />
           <div className="text-center sm:w-1/2 sm:text-left mx-auto text-white">
