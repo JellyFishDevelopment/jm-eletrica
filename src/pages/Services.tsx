@@ -40,13 +40,11 @@ export default function Services() {
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <ServiceCard
             image={<Lightning size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
           />
           <ServiceCard
             image={<Barricade size={80} color="#FFF" />}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
+            text="Atuamos no setor de projetos elétricos, de modo a garantir que todas as etapas do projeto, sejam executadas de maneira adequada, visando sempre a qualidade e a segurança, baseando-se nas normas regulamentadoras e boas práticas da engenharia."
           />
           <ServiceCard
             image={<ShieldCheckered size={80} color="#FFF" />}
