@@ -5,6 +5,7 @@ import logoImage from './../assets/logo-jm.png'
 import trabalhoUm from '../assets/trabalho-1.png'
 import trabalhoDois from '../assets/trabalho-2.png'
 import trabalhoTres from '../assets/trabalho-3.png'
+import { motion } from 'framer-motion'
 
 export default function Trabalhos() {
   return (
@@ -21,16 +22,37 @@ export default function Trabalhos() {
       />
       {/* Cabeçalho */}
       <div className="bg-fifth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
-        <h2 className="font-bold text-center my-10 text-5xl sm:text-8xl">
-          Trabalhos realizados
-        </h2>
-        <p className="font-light text-center text-xl sm:text-3xl">
-          Nesta página demonstramos alguns dos serviços prestados recentemente.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="font-bold text-center my-10 text-5xl sm:text-8xl">
+            Trabalhos realizados
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
+          <p className="font-light text-center text-xl sm:text-3xl">
+            Nesta página demonstramos alguns dos serviços prestados
+            recentemente.
+          </p>
+        </motion.div>
       </div>
       {/* Trabalhos */}
       <div className="p-8 sm:p-16">
-        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+        <motion.div
+          initial={{ opacity: 0, x: 90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between"
+        >
           <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-2xl sm:text-4xl">
               San Diego Pizzas e Esfirraria
@@ -46,8 +68,14 @@ export default function Trabalhos() {
             </p>
           </div>
           <img src={trabalhoUm} />
-        </div>
-        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between"
+        >
           <div className="my-4 sm:mt-8 mx-8">
             <h3 className="font-bold text-white text-4xl">
               Empório e padaria Rodrigues - Unidade São Vicente
@@ -61,12 +89,16 @@ export default function Trabalhos() {
             </p>
           </div>
           <img src={trabalhoDois} />
-        </div>
-        <div className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="bg-[#747474] sm:w-[80%] my-8 p-4 sm:p-8 mx-auto rounded-xl flex flex-col sm:flex-row justify-between"
+        >
           <div className="my-4 sm:mt-8 mx-8">
-            <h3 className="font-bold text-white text-4xl">
-              Condomínio do Sol
-            </h3>
+            <h3 className="font-bold text-white text-4xl">Condomínio do Sol</h3>
             <span className="font-bold text-green-500 text-2xl ">
               Condomínio
             </span>
@@ -79,7 +111,7 @@ export default function Trabalhos() {
             </p>
           </div>
           <img src={trabalhoTres} />
-        </div>
+        </motion.div>
       </div>
       {/* Banner */}
       <BannerContato />
