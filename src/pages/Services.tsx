@@ -45,25 +45,61 @@ export default function Services() {
       />
       <div className="pt-16 h-96 text-white bg-[#818181]">
         {/* Título */}
-        <h1 className="text-center font-bold text-6xl sm:text-8xl">Serviços</h1>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
+          <h1 className="text-center font-bold text-6xl sm:text-8xl">
+            Serviços
+          </h1>
+        </motion.div>
         {/* Serviços */}
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
-          <ServiceCard
-            image={<NotePencil size={80} color="#FFF" />}
-            text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
-          />
-          <ServiceCard
-            image={<Lightning size={80} color="#FFF" />}
-            text="Atuamos no setor de projetos elétricos, de modo a garantir que todas as etapas do projeto, sejam executadas de maneira adequada, visando sempre a qualidade e a segurança, baseando-se nas normas regulamentadoras e boas práticas da engenharia."
-          />
-          <ServiceCard
-            image={<ClipboardText size={80} color="#FFF" />}
-            text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
+          >
+            <ServiceCard
+              image={<NotePencil size={80} color="#FFF" />}
+              text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.7 }}
+          >
+            <ServiceCard
+              image={<Lightning size={80} color="#FFF" />}
+              text="Atuamos no setor de projetos elétricos, de modo a garantir que todas as etapas do projeto, sejam executadas de maneira adequada, visando sempre a qualidade e a segurança, baseando-se nas normas regulamentadoras e boas práticas da engenharia."
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+          >
+            <ServiceCard
+              image={<ClipboardText size={80} color="#FFF" />}
+              text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
+            />
+          </motion.div>
         </div>
         {/* Serviços + Imagens */}
 
-        <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
+        >
           <CartaoServico
             image={<NotePencil size={80} color="#FFF" />}
             title="Consultoria"
@@ -75,8 +111,14 @@ export default function Services() {
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
-        </div>
-        <div className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24"
+        >
           <img
             src={imagemProjeto}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
@@ -88,8 +130,14 @@ export default function Services() {
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
             link="/projetos"
           />
-        </div>
-        <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
+        >
           <CartaoServico
             image={<ClipboardText size={80} color="#FFF" />}
             title="Laudos Técnicos"
@@ -101,7 +149,7 @@ export default function Services() {
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
-        </div>
+        </motion.div>
 
         {/* Carousel */}
         <div className="bg-[#969696] p-8">
