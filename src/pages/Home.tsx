@@ -1,9 +1,4 @@
-import {
-  CaretDown,
-  ClipboardText,
-  Lightning,
-  NotePencil,
-} from 'phosphor-react'
+import { CaretDown, ClipboardText, Lightning, NotePencil } from 'phosphor-react'
 
 import bannerOne from './../assets/banner-1.png'
 import logoImage from './../assets/logo-jm.png'
@@ -40,7 +35,7 @@ export default function Home() {
             Serviços Elétricos JM
           </h2>
         </motion.div>
-        <button className="self-start hidden sm:block  bg-[#969696] text-white p-6 mt-32 rounded-full font-bold sm:text-lg md:text-xl">
+        <button className="self-start hidden sm:block  bg-[#969696] text-white p-4 2xl:p-6 mt-32 rounded-full font-bold text-base  2xl:text-xl">
           <LinkNav to="/contact">
             {' '}
             <p>Faça seu orçamento agora!</p>
@@ -120,7 +115,9 @@ export default function Home() {
               Atuação no mercado
             </h3>
             <p className="my-8 font-normal text-2xl">
-              Há 12 anos trabalhando com engenharia elétrica, buscamos ser referência quando o assunto é qualidade e eficiência. Estamos aptos para entregar aquilo que o cliente merece. 
+              Há 12 anos trabalhando com engenharia elétrica, buscamos ser
+              referência quando o assunto é qualidade e eficiência. Estamos
+              aptos para entregar aquilo que o cliente merece.
             </p>
             <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
               <LinkNav to="/contact">
