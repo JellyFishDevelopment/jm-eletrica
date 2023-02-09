@@ -17,7 +17,7 @@ export default function CartaoServico(props: ServicosProps) {
         type="button"
         className="px-4 py-6 mt-4 font-regular text-base bg-white text-black rounded-full"
       >
-        <Link to={props.link}>Saiba mais sobre os nossos serviços</Link>
+        <Link to={props.link}>Saiba mais sobre esse serviço</Link>
       </button>
     </div>
   )
