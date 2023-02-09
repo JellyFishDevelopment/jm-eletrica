@@ -58,6 +58,7 @@ export default function Services() {
             image={<Lightning size={80} color="#FFF" />}
             title="Consultoria"
             description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
+            link="/consultoria"
           />
           <img
             src={imagemConsultoria}
@@ -75,6 +76,7 @@ export default function Services() {
             image={<Barricade size={80} color="#FFF" />}
             title="Projetos Elétricos"
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
+            link="/projetos"
           />
         </div>
         <div className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16">
@@ -82,6 +84,7 @@ export default function Services() {
             image={<ShieldCheckered size={80} color="#FFF" />}
             title="Laudos Técnicos"
             description="O Laudo Técnico nada mais é que um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
+            link="/laudos"
           />
           <img
             src={imagemLaudo}

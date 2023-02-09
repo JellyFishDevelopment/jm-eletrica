@@ -11,6 +11,8 @@ import Home from './pages/Home'
 import ErrorPage from './pages/ErrorPage'
 import Laudos from './pages/Laudos'
 import Trabalhos from './pages/Trabalhos'
+import ProjetosEletricos from './pages/ProjetosEletricos'
+import Consultoria from './pages/Consultoria'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: 'trabalhos',
         element: <Trabalhos />
+      },
+      {
+        path: 'consultoria',
+        element: <Consultoria />
+      },
+      {
+        path: 'projetos',
+        element: <ProjetosEletricos />
       }
     ]
   }
