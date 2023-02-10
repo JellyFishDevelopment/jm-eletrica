@@ -10,7 +10,8 @@ import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import logoImage from './../assets/logo-jm.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import { Link } from 'react-router-dom'
+import { Link as LinkNav } from 'react-router-dom'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 export default function About() {
   const carousel = useRef()
@@ -86,7 +87,11 @@ export default function About() {
               type="button"
               className=" px-4 py-6 mt-4 font-bold text-2xl bg-[#818181] text-white rounded-full"
             >
-              Saiba mais sobre os nossos serviços
+            <LinkNav to="/services">
+              {' '}
+              <p>Saiba mais sobre os nossos serviços</p>
+            </LinkNav>
+              
             </button>
           </div>
         </motion.div>
@@ -179,7 +184,7 @@ export default function About() {
           </motion.div>
         </motion.div>
         <button className="bg-[#5C5C5C] w-1/2  text-white font-medium rounded-xl p-4 my-4">
-          <Link to="/trabalhos">Ver mais trabalhos</Link>
+          <LinkNav to="/trabalhos">Ver mais trabalhos</LinkNav>
         </button>
       </div>
       <BannerContato />
