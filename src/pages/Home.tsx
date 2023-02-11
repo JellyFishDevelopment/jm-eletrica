@@ -33,7 +33,7 @@ export default function Home() {
           transition={{ duration: 0.9 }}
         >
           <h2 className="mt-16 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
-            Serviços Elétricos JM
+          JM Soluções em Energia
           </h2>
         </motion.div>
         <button className="self-start hidden sm:block  bg-[#969696] text-white p-4 2xl:p-6 mt-32 rounded-full font-bold text-base  2xl:text-xl">
