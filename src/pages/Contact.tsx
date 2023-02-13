@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="bg-[#969696] p-12">
         <form className="bg-[#818181] sm:w-1/3 mx-auto p-8 flex flex-col" action="https://formsubmit.co/jellyfish.teste@gmail.com" method="POST">
           <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_next" value="http://localhost:5173/"/>
+          <input type="hidden" name="_next" value="http://localhost:5173/contact"/>
           <div className="flex justify-between my-2  ">
             <input
               type="text"

@@ -10,11 +10,6 @@ export default function Footer() {
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Atendimento na Baixada Santista
           </h2>
-          <ul className="text-black flex flex-col ">
-            <li className="mb-4 ">Santos</li>
-            <li className="mb-4 ">São Vicente</li>
-            <li className="mb-4 ">Praia Grande</li>
-          </ul>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
