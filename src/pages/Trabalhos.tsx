@@ -1,10 +1,10 @@
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
-import logoImage from './../assets/logo-jm.png'
-import trabalhoUm from '../assets/trabalho-1.png'
-import trabalhoDois from '../assets/trabalho-2.png'
-import trabalhoTres from '../assets/trabalho-3.png'
+import logoImage from '/logo-jm.png'
+import trabalhoUm from '/trabalho-1.png'
+import trabalhoDois from '/trabalho-2.png'
+import trabalhoTres from '/trabalho-3.png'
 import { motion } from 'framer-motion'
 
 export default function Trabalhos() {

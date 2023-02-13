@@ -1,14 +1,14 @@
-import eletricaUm from '../assets/eletrica-1.png'
-import eletricaDois from '../assets/eletrica-2.png'
-import trabalhoUm from '../assets/trabalho-1.png'
-import trabalhoDois from '../assets/trabalho-2.png'
-import trabalhoTres from '../assets/trabalho-3.png'
+import eletricaUm from '/eletrica-1.png'
+import eletricaDois from '/eletrica-2.png'
+import trabalhoUm from '/trabalho-1.png'
+import trabalhoDois from '/trabalho-2.png'
+import trabalhoTres from '/trabalho-3.png'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
 import TrabalhoCard from '../components/TrabalhoCard'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import logoImage from './../assets/logo-jm.png'
+import logoImage from '/logo-jm.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { Link as LinkNav } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
@@ -87,11 +87,10 @@ export default function About() {
               type="button"
               className=" px-4 py-6 mt-4 font-bold text-2xl bg-[#818181] text-white rounded-full"
             >
-            <LinkNav to="/services">
-              {' '}
-              <p>Saiba mais sobre os nossos serviços</p>
-            </LinkNav>
-              
+              <LinkNav to="/services">
+                {' '}
+                <p>Saiba mais sobre os nossos serviços</p>
+              </LinkNav>
             </button>
           </div>
         </motion.div>

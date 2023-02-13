@@ -2,7 +2,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { motion } from 'framer-motion'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
-import logoImage from './../assets/logo-jm.png'
+import logoImage from '/logo-jm.png'
 
 export default function ProjetosEletricos() {
   return (

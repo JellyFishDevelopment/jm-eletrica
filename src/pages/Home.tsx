@@ -1,8 +1,7 @@
 import { CaretDown, ClipboardText, Lightning, NotePencil } from 'phosphor-react'
 
-import bannerOne from './../assets/banner-1.png'
-import logoImage from './../assets/logo-jm.png'
-import logoImageFundo from './../assets/logo-jm-fundo.png'
+import logoImage from '/logo-jm.png'
+import logoImageFundo from '/logo-jm-fundo.png'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
@@ -33,7 +32,7 @@ export default function Home() {
           transition={{ duration: 0.9 }}
         >
           <h2 className="mt-16 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
-          JM Soluções em Energia
+            JM Soluções em Energia
           </h2>
         </motion.div>
         <button className="self-start hidden sm:block  bg-[#969696] text-white p-4 2xl:p-6 mt-32 rounded-full font-bold text-base  2xl:text-xl">
