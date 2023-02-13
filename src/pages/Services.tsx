@@ -14,10 +14,10 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logoImage from './../assets/logo-jm.png'
 import Footer from '../components/Footer'
 import { motion } from 'framer-motion'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, MutableRefObject } from 'react'
 
 export default function Services() {
-  const carousel = useRef()
+  const carousel = useRef<any>(null)
   const [width, setWidth] = useState(0)
   const slides = [
     laudoUm,

@@ -13,7 +13,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { Link } from 'react-router-dom'
 
 export default function About() {
-  const carousel = useRef()
+  const carousel = useRef<any>(null)
   const [width, setWidth] = useState(0)
   const slides = [
     {
