@@ -18,7 +18,7 @@ export default function ProjetosEletricos() {
         placeholder="Mensagem:"
       />
       {/* Cabeçalho */}
-      <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">
+      <div className="bg-sixth-banner bg-cover bg-no-repeat p-8 sm:p-16 h-96 text-white">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}

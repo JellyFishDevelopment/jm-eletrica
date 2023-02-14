@@ -85,7 +85,7 @@ export default function About() {
           <div className="text-center">
             <button
               type="button"
-              className=" px-4 py-6 mt-4 font-bold text-2xl bg-[#818181] text-white rounded-full"
+              className=" px-4 py-6 mt-4 font-bold text-2xl bg-[#FAD40F] text-white rounded-full"
             >
               <LinkNav to="/services">
                 {' '}
@@ -182,7 +182,7 @@ export default function About() {
             ))}
           </motion.div>
         </motion.div>
-        <button className="bg-[#5C5C5C] w-1/2  text-white font-medium rounded-xl p-4 my-4">
+        <button className="bg-[#FAD40F] w-1/2  text-white font-medium rounded-xl p-4 my-4">
           <LinkNav to="/trabalhos">Ver mais trabalhos</LinkNav>
         </button>
       </div>

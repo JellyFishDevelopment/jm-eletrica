@@ -5,7 +5,7 @@ export default function BannerContato() {
       <p className=" mx-auto font-light text-white text-4xl">
         Entre em contato com a JM Elétrica
       </p>
-      <button className="w-full sm:w-auto mx-auto text-center bg-[#969696] text-white p-6  rounded-2xl px-12 font-bold text-xl 2xl:text-3xl">
+      <button className="w-full sm:w-auto mx-auto text-center bg-[#FAD40F] text-white p-6  rounded-2xl px-12 font-bold text-xl 2xl:text-3xl">
         <Link to="/contact">
           <p>Fale conosco</p>
         </Link>

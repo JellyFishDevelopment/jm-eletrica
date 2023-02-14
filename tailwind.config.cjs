@@ -11,7 +11,10 @@ module.exports = {
         'second-banner': "url('/banner-2.png')",
         'third-banner': "url('/banner-3.png')",
         'fourth-banner': "url('/banner-4.png')",
-        'fifth-banner': "url('/banner-5.png')"
+        'fifth-banner': "url('/banner-5.png')",
+        'sixth-banner': "url('/banner-6.png')",
+        'seventh-banner': "url('/banner-7.png')",
+        'eighth-banner': "url('/banner-8.png')"
       }
     }
   },

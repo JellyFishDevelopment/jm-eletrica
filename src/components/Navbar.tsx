@@ -1,9 +1,15 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logoImg from '../assets/logo-jm.png'
 
 export default function Navbar() {
   const [open, setOpen] = useState(true)
+
+  let activeStyle = {
+    textDecoration: 'underline',
+    textDecorationColor: '#FAD40F'
+  }
+
   return (
     <nav className="p-2 2xl:p-4 font-light text-xl  w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -37,18 +43,34 @@ export default function Navbar() {
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
           <div className="flex flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
-            <Link className="my-2 text-center" to="/">
+            <NavLink
+              to="/"
+              className="my-2 text-center"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Início
-            </Link>
-            <Link className="my-2 text-center" to="/services">
+            </NavLink>
+            <NavLink
+              className="my-2 text-center"
+              to="/services"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Serviços
-            </Link>
-            <Link className="my-2 text-center" to="/about">
+            </NavLink>
+            <NavLink
+              className="my-2 text-center"
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Sobre nós
-            </Link>
-            <Link className="my-2 text-center" to="/contact">
+            </NavLink>
+            <NavLink
+              className="my-2 text-center"
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Contato
-            </Link>
+            </NavLink>
           </div>
         </div>
         <p

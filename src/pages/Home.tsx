@@ -24,7 +24,7 @@ export default function Home() {
         placeholder="Mensagem:"
       />
       {/* Banner principal */}
-      <div className="bg-first-banner px-8 pb-8 pt-16 w-full flex flex-col items-center  bg-cover bg-no-repeat  text-white">
+      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col items-center justify-between  bg-cover bg-no-repeat  text-white">
         <motion.div
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -32,10 +32,13 @@ export default function Home() {
           transition={{ duration: 0.9 }}
         >
           <h2 className="mt-16 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
-            JM Soluções em Energia
+            Laudos e Projetos Elétricos.
+          </h2>
+          <h2 className=" font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
+            Conheça o nosso portifólio.
           </h2>
         </motion.div>
-        <button className="self-start hidden sm:block  bg-[#969696] text-white p-4 2xl:p-6 mt-32 rounded-full font-bold text-base  2xl:text-xl">
+        <button className="self-start hidden sm:block  bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
           <LinkNav to="/contact">
             {' '}
             <p>Faça seu orçamento agora!</p>
@@ -68,7 +71,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <ServiceCard
-              image={<NotePencil size={80} color="#FFF" />}
+              image={<NotePencil size={80} color="#FAD40F" />}
               text="Consultoria de Serviços"
             />
           </motion.div>
@@ -79,7 +82,7 @@ export default function Home() {
             transition={{ duration: 0.7 }}
           >
             <ServiceCard
-              image={<Lightning size={80} color="#FFF" />}
+              image={<Lightning size={80} color="#FAD40F" />}
               text="Projetos elétricos"
             />
           </motion.div>
@@ -90,7 +93,7 @@ export default function Home() {
             transition={{ duration: 0.9 }}
           >
             <ServiceCard
-              image={<ClipboardText size={80} color="#FFF" />}
+              image={<ClipboardText size={80} color="#FAD40F" />}
               text="Laudos Técnicos"
             />
           </motion.div>
@@ -119,7 +122,7 @@ export default function Home() {
               referência quando o assunto é qualidade e eficiência. Estamos
               aptos para entregar aquilo que o cliente merece.
             </p>
-            <button className=" mx-auto text-center bg-[#969696] text-white p-6  rounded-full font-bold text-xl">
+            <button className=" mx-auto text-center bg-[#FAD40F] text-white p-6  rounded-full font-bold text-xl">
               <LinkNav to="/contact">
                 <p>Faça seu orçamento agora!</p>
               </LinkNav>
