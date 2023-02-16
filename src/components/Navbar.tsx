@@ -14,11 +14,7 @@ export default function Navbar() {
     <nav className="p-2 2xl:p-4 font-light text-xl  w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/">
-          <img
-            src={logoImg}
-            className="w-16 h-16 2xl:w-24 2xl:h-24"
-            alt="Logo JM"
-          />
+          <img src={logoImg} className="h-16 2xl:w-40 " alt="Logo JM" />
         </Link>
         <button
           onClick={() => setOpen(!open)}

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="p-4 bg-white sm:p-6 ">
       <div className="md:flex md:justify-evenly">
-        <img src={logoImg} className="mx-auto sm:mx-0 my-4 w-40 h-40" alt="" />
+        <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
         <div className="mb-6 md:mb-0 sm:text-center items-center">
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Atendimento na Baixada Santista
