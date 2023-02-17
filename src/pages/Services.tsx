@@ -1,6 +1,6 @@
 import { ClipboardText, Lightning, NotePencil } from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
-import laudoUm from '/laudo-2.png'
+import laudoUm from '/laudo-1.png'
 import laudoDois from '/laudo-2.png'
 import laudoTres from '/laudo-3.png'
 import laudoQuatro from '/laudo-4.jpeg'
