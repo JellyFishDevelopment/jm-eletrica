@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="p-4 bg-white sm:p-6 ">
       <div className="md:flex md:justify-evenly">
         <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
-        <div className="mb-6 md:mb-0 sm:text-center items-center">
+        <div className="mb-6 md:mb-0 sm:text-center items-center flex">
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Atendimento na Baixada Santista
           </h2>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="sm:flex flex-row-reverse sm:items-center sm:justify-between">
+      <div className="sm:flex flex sm:items-center sm:justify-between">
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <Link
             to="/"
