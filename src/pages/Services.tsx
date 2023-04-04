@@ -77,7 +77,7 @@ export default function Services() {
           >
             <ServiceCard
               image={<CheckCircle size={80} color="#FAD40F" />}
-              text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
+              text="A execução é de suma importância para realizar instalações elétricas competentes, a fim de que se tenha garantia da qualidade do serviço executado, feito por profissionais especializados em instalações elétricas."
             />
           </motion.div>
 
@@ -135,7 +135,7 @@ export default function Services() {
           <CartaoServico
             image={<CheckCircle size={80} color="#FAD40F" />}
             title="Execução"
-            description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
+            description="A execução é de suma importância para realizar instalações elétricas competentes, a fim de que se tenha garantia da qualidade do serviço executado, feito por profissionais especializados em instalações elétricas."
             link="/execucao"
           />
           <img
@@ -159,7 +159,7 @@ export default function Services() {
           <CartaoServico
             image={<Lightning size={80} color="#FAD40F" />}
             title="Laudos Técnicos"
-            description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
+            description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
             link="/laudos"
           />
         </motion.div>
@@ -173,7 +173,7 @@ export default function Services() {
           <CartaoServico
             image={<ClipboardText size={80} color="#FAD40F" />}
             title="Consultoria de Serviço"
-            description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
+            description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
             link="/consultoria"
           />
           <img

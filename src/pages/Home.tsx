@@ -24,7 +24,7 @@ export default function Home() {
         placeholder="Mensagem:"
       />
       {/* Banner principal */}
-      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between  bg-cover bg-no-repeat  text-white">
+      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between item-center bg-cover bg-no-repeat  text-white">
         <motion.div
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -53,16 +53,19 @@ export default function Home() {
             </LinkNav>
           </button>
         </div>
-        <Link
-          to="#servicos"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className="cursor-pointer"
-        >
-          <CaretDown className="hidden lg:block " size={64} color="#fff" />
-        </Link>
+
+        <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between item-center bg-cover bg-no-repeat  text-white">
+          <Link
+            to="#servicos"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="cursor-pointer"
+          >
+            <CaretDown className="hidden lg:block " size={64} color="#fff" />
+          </Link>
+        </div>
       </div>
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
