@@ -53,8 +53,6 @@ export default function Home() {
             </LinkNav>
           </button>
         </div>
-
-        <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between item-center bg-cover bg-no-repeat  text-white">
           <Link
             to="#servicos"
             spy={true}
@@ -65,7 +63,6 @@ export default function Home() {
           >
             <CaretDown className="hidden lg:block " size={64} color="#fff" />
           </Link>
-        </div>
       </div>
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
