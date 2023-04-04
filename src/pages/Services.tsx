@@ -1,4 +1,4 @@
-import { ClipboardText, Lightning, NotePencil, CheckCircle } from 'phosphor-react'
+import { ClipboardText, Lightning, NotePencil, CheckCircle, Check } from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
 import laudoUm from '/laudo-1.png'
 import laudoDois from '/laudo-2.png'
@@ -68,7 +68,8 @@ export default function Services() {
               text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
             />
           </motion.div>
-                    <motion.div
+
+            <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -79,6 +80,7 @@ export default function Services() {
               text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
             />
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -116,8 +118,8 @@ export default function Services() {
             alt="Imagem de laudo e instalações elétricas"
           />
           <CartaoServico
-            image={<Lightning size={80} color="#FAD40F" />}
-            title="Execução"
+            image={<NotePencil size={80} color="#FAD40F" />}
+            title="Projetos"
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
             link="/projetos"
           />
@@ -131,10 +133,10 @@ export default function Services() {
           className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
         >
           <CartaoServico
-            image={<NotePencil size={80} color="#FAD40F" />}
-            title="Consultoria"
+            image={<CheckCircle size={80} color="#FAD40F" />}
+            title="Execução"
             description="A consultoria elétrica consiste em buscar economia de energia elétrica ao cliente e aproveitar da melhor maneira o seu consumo mensal, versus suas instalações elétricas. Este serviço pode ser através de análise da conta de energia, que as vezes numa simples alteração tarifária, poder causar economia."
-            link="/consultoria"
+            link="/execucao"
           />
           <img
             src={imagemConsultoria}
@@ -156,9 +158,9 @@ export default function Services() {
           />
           <CartaoServico
             image={<Lightning size={80} color="#FAD40F" />}
-            title="Projetos Elétricos"
+            title="Laudos Técnicos"
             description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
-            link="/projetos"
+            link="/laudos"
           />
         </motion.div>
         <motion.div
@@ -170,9 +172,9 @@ export default function Services() {
         >
           <CartaoServico
             image={<ClipboardText size={80} color="#FAD40F" />}
-            title="Laudos Técnicos"
+            title="Consultoria de Serviço"
             description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
-            link="/laudos"
+            link="/consultoria"
           />
           <img
             src={imagemLaudo}

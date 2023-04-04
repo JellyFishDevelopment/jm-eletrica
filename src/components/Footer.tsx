@@ -8,7 +8,8 @@ export default function Footer() {
         <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
         <div className="mb-6 md:mb-0 sm:text-center items-center flex">
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
-            Atendimento na Baixada Santista
+          CNPJ: 44.312.966/0001-30
+          Endereço: Av. Antônio Emmerich 499 – Bairro Vila Cascatinha - São Vicente / SP
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -36,9 +37,10 @@ export default function Footer() {
               Serviços
             </h2>
             <ul className="text-black flex flex-col ">
-              <li className="mb-4 ">Consultoria</li>
               <li className="mb-4 ">Projetos Elétricos</li>
+              <li className="mb-4 ">Execução</li>
               <li className="mb-4 ">Laudos Técnicos</li>
+              <li className="mb-4 ">Consultoria de Serviço</li>
             </ul>
           </div>
           <div>

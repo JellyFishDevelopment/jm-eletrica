@@ -24,7 +24,7 @@ export default function Home() {
         placeholder="Mensagem:"
       />
       {/* Banner principal */}
-      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col items-center justify-between  bg-cover bg-no-repeat  text-white">
+      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between  bg-cover bg-no-repeat  text-white">
         <motion.div
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -34,16 +34,25 @@ export default function Home() {
           <h2 className="mt-16 font-bold text-4xl sm:text-5xl text-white">
             Conheça o nosso portifólio.
           </h2>
-          <h2 className=" font-bold text-4xl sm:text-5xl md:text-7xl text-white">
+          <h2 className="font-bold text-4xl sm:text-5xl md:text-7xl text-white">
             Laudos e Projetos Elétricos.
           </h2>
         </motion.div>
-        <button className="self-start hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
-          <LinkNav to="/contact">
-            {' '}
-            <p>Faça seu orçamento agora!</p>
-          </LinkNav>
-        </button>
+        <div className="flex flex-col sm:flex-row mt-16">
+          <button className="self-start hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <LinkNav to="/contact">
+              {' '}
+              <p>Faça seu orçamento agora</p>
+            </LinkNav>
+          </button>
+
+          <button className="self-start hidden sm:block bg-[#FFA228] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <LinkNav to="/services">
+              {' '}
+              <p>Conheça nossos serviços</p>
+            </LinkNav>
+          </button>
+        </div>
         <Link
           to="#servicos"
           spy={true}

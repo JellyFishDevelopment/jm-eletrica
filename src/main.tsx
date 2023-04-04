@@ -13,6 +13,7 @@ import Laudos from './pages/Laudos'
 import Trabalhos from './pages/Trabalhos'
 import ProjetosEletricos from './pages/ProjetosEletricos'
 import Consultoria from './pages/Consultoria'
+import Execucao from './pages/Execucao'
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: 'projetos',
         element: <ProjetosEletricos />
+      },
+      {
+        path: 'execucao',
+        element: <Execucao />
       }
     ]
   }
