@@ -1,4 +1,4 @@
-import { CaretDown, ClipboardText, Lightning, NotePencil } from 'phosphor-react'
+import { CaretDown, ClipboardText, Lightning, NotePencil, CheckCircle } from 'phosphor-react'
 
 import logoImage from '/logo-jm.png'
 import logoImageFundo from '/logo-jm-fundo.png'
@@ -31,14 +31,14 @@ export default function Home() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h2 className="mt-16 font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
-            Laudos e Projetos Elétricos.
-          </h2>
-          <h2 className=" font-bold text-center text-4xl sm:text-5xl md:text-7xl text-white">
+          <h2 className="mt-16 font-bold text-4xl sm:text-5xl text-white">
             Conheça o nosso portifólio.
           </h2>
+          <h2 className=" font-bold text-4xl sm:text-5xl md:text-7xl text-white">
+            Laudos e Projetos Elétricos.
+          </h2>
         </motion.div>
-        <button className="self-start hidden sm:block  bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+        <button className="self-start hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
           <LinkNav to="/contact">
             {' '}
             <p>Faça seu orçamento agora!</p>
@@ -58,7 +58,7 @@ export default function Home() {
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
         <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
-          Principais serviços
+          Nossas especialidades
         </h2>
         <p className="text-black text-center font-normal text-3xl">
           Saiba mais sobre os principais serviços que oferecemos!
@@ -72,7 +72,18 @@ export default function Home() {
           >
             <ServiceCard
               image={<NotePencil size={80} color="#FAD40F" />}
-              text="Consultoria de Serviços"
+              text="Projetos"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
+          >
+            <ServiceCard
+              image={<CheckCircle size={80} color="#FAD40F" />}
+              text="Execução"
             />
           </motion.div>
           <motion.div
@@ -83,7 +94,7 @@ export default function Home() {
           >
             <ServiceCard
               image={<Lightning size={80} color="#FAD40F" />}
-              text="Projetos elétricos"
+              text="Laudos Técnicos"
             />
           </motion.div>
           <motion.div
@@ -94,7 +105,7 @@ export default function Home() {
           >
             <ServiceCard
               image={<ClipboardText size={80} color="#FAD40F" />}
-              text="Laudos Técnicos"
+              text="Consultoria de Serviço"
             />
           </motion.div>
         </div>

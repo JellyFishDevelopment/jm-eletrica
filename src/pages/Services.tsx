@@ -1,4 +1,4 @@
-import { ClipboardText, Lightning, NotePencil } from 'phosphor-react'
+import { ClipboardText, Lightning, NotePencil, CheckCircle } from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
 import laudoUm from '/laudo-1.png'
 import laudoDois from '/laudo-2.png'
@@ -68,6 +68,17 @@ export default function Services() {
               text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
             />
           </motion.div>
+                    <motion.div
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
+          >
+            <ServiceCard
+              image={<CheckCircle size={80} color="#FAD40F" />}
+              text="Oferecemos as melhores soluções para aqueles que precisam de consultoria quanto à energia que sua residência ou empresa consome. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade."
+            />
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -92,6 +103,25 @@ export default function Services() {
           </motion.div>
         </div>
         {/* Serviços + Imagens */}
+        <motion.div
+          initial={{ opacity: 0, y: 90 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24"
+        >
+          <img
+            src={imagemProjeto}
+            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
+            alt="Imagem de laudo e instalações elétricas"
+          />
+          <CartaoServico
+            image={<Lightning size={80} color="#FAD40F" />}
+            title="Execução"
+            description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
+            link="/projetos"
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -90 }}

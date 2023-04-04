@@ -76,11 +76,9 @@ export default function About() {
           <h3 className="font-normal text-7xl">JM Elétrica</h3>
           <p className="font-bold text-4xl">Engenharia elétrica de qualidade</p>
           <p className="font-light text-3xl my-16">
-            Nossa visão como empresa é manter a qualidade e excelência na
-            Engenharia Elétrica, fornecendo serviços e soluções integradas para
-            se tornar referência no mercado, desta forma conquistando confiança
-            e entregando cada vez mais eficiência nos serviços prestados,
-            integrando pessoas para somar e desenvolver um futuro melhor.
+          A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+          Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. 
+          Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
           </p>
           <div className="text-center">
             <button
@@ -150,11 +148,9 @@ export default function About() {
             Confiabilidade.
           </p>
           <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
-            Minha proposta é sempre dedicar meu tempo para entregar serviços com
-            qualidade em tempo hábil, respeitando o meio ambiente e todos os
-            protocolos de segurança. Oferecemos serviços variados de elétrica,
-            então caso tenha alguma dúvida ou precise de algum outro serviço que
-            não encontrou no site, entre em contato conosco!
+          A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+          Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
+
           </p>
         </motion.div>
       </div>
