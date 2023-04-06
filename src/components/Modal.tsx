@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const ModalWrapper = styled.div`
@@ -29,6 +28,7 @@ const ModalContent = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
+  width: 50%;
 `;
 
 const ModalClose = styled.button`
@@ -37,7 +37,23 @@ const ModalClose = styled.button`
   right: 10px;
 `;
 
-const Modal = ({ isOpen, onClose, children }) => {
+const ModalTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+`;
+
+const ModalList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const ModalListItem = styled.li`
+  margin-bottom: 10px;
+`;
+
+const Modal = ({ isOpen, onClose, title, list }) => {
   if (!isOpen) return null;
 
   return (
@@ -45,7 +61,12 @@ const Modal = ({ isOpen, onClose, children }) => {
       <ModalOverlay onClick={onClose} />
       <ModalContent>
         <ModalClose onClick={onClose}>X</ModalClose>
-        {children}
+        <ModalTitle>{title}</ModalTitle>
+        <ModalList>
+          {list.map((item, index) => (
+            <ModalListItem key={index}>{item}</ModalListItem>
+          ))}
+        </ModalList>
       </ModalContent>
     </ModalWrapper>
   );

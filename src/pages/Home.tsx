@@ -53,6 +53,7 @@ export default function Home() {
     setIsOpenModal4(false);
   };
 
+  const items = ['Item 1', 'Item 2', 'Item 3'];
 
   return (
     <div>
@@ -130,7 +131,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1}>
+            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1} title="Minha Lista" list={items}>
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo dos Projetos.</p>
               </Modal>
@@ -150,7 +151,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2}>
+            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2} title="Minha Lista" list={items}>
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo da Execução.</p>
               </Modal>
@@ -170,7 +171,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3}>
+            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3} title="Minha Lista" list={items}>
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo dos Laudos Técnicos.</p>
               </Modal>
@@ -190,7 +191,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4}>
+            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4} title="Minha Lista 4" list={items}>
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo da Consultoria de Serviço.</p>
               </Modal>
