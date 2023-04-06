@@ -5,17 +5,27 @@ export default function Footer() {
   return (
     <footer className="p-4 bg-white sm:p-6 ">
       <div className="md:flex md:justify-evenly">
-        <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
         <div className="mb-6 md:mb-0 sm:text-center items-center flex">
-          <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
-          CNPJ: 44.312.966/0001-30
-          Endereço: Av. Antônio Emmerich 499 – Bairro Vila Cascatinha - São Vicente / SP
-          </h2>
+          {/* <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
+          oii
+          </h2> */}
         </div>
+        <div>
+            <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
+              Contato
+            </h2>
+            <ul className="text-black flex flex-col ">
+              <li className="mb-4 ">JM Soluções em Energia LTDA.</li>
+              <li className="mb-4 ">CNPJ: 44.312.966/0001-30</li>
+              <li className="mb-4 ">Av. Antônio Emmerich 499 – Bairro Vila Cascatinha - São Vicente / SP</li>
+              <li className="mb-4 ">Telefone: (13) 99646-2507</li>
+              <li className="mb-4 ">E-mail: jmsolucoeseletricas@hotmail.com</li>
+            </ul>
+          </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
-              Institucional
+              Menu
             </h2>
             <ul className="text-black flex flex-col ">
               <Link className="mb-4 hover:underline" to="/">
@@ -34,7 +44,7 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
-              Serviços
+              Nossos Serviços
             </h2>
             <ul className="text-black flex flex-col ">
               <li className="mb-4 ">Projetos Elétricos</li>
@@ -43,15 +53,7 @@ export default function Footer() {
               <li className="mb-4 ">Consultoria de Serviço</li>
             </ul>
           </div>
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
-              Contato
-            </h2>
-            <ul className="text-black flex flex-col ">
-              <li className="mb-4 ">(13) 99646-2507</li>
-              <li className="mb-4 ">emailjm@eletrica.com</li>
-            </ul>
-          </div>
+          <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
         </div>
       </div>
 
