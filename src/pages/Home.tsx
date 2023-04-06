@@ -10,8 +10,50 @@ import Footer from '../components/Footer'
 import { Link as LinkNav } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import { motion } from 'framer-motion'
+import Modal from '../components/Modal'
+import { useState } from 'react'
+
 
 export default function Home() {
+
+  const [isOpenModal1, setIsOpenModal1] = useState(false);
+  const [isOpenModal2, setIsOpenModal2] = useState(false);
+  const [isOpenModal3, setIsOpenModal3] = useState(false);
+  const [isOpenModal4, setIsOpenModal4] = useState(false);
+
+  const handleOpenModal1 = () => {
+    setIsOpenModal1(true);
+  };
+
+  const handleCloseModal1 = () => {
+    setIsOpenModal1(false);
+  };
+
+  const handleOpenModal2 = () => {
+    setIsOpenModal2(true);
+  };
+
+  const handleCloseModal2 = () => {
+    setIsOpenModal2(false);
+  };
+
+  const handleOpenModal3 = () => {
+    setIsOpenModal3(true);
+  };
+
+  const handleCloseModal3 = () => {
+    setIsOpenModal3(false);
+  };
+
+  const handleOpenModal4 = () => {
+    setIsOpenModal4(true);
+  };
+
+  const handleCloseModal4 = () => {
+    setIsOpenModal4(false);
+  };
+
+
   return (
     <div>
       <FloatingWhatsApp
@@ -64,6 +106,8 @@ export default function Home() {
             <CaretDown className="hidden lg:block " size={64} color="#fff" />
           </Link>
       </div>
+
+
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
         <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
@@ -79,44 +123,81 @@ export default function Home() {
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-            <ServiceCard
-              image={<NotePencil size={80} color="#FAD40F" />}
-              text="Projetos"
-            />
+            <button onClick={handleOpenModal1}>
+              <ServiceCard
+                image={<NotePencil size={80} color="#FAD40F" />}
+                text="Projetos"
+              />
+            </button>
+            <div>
+            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1}>
+                <h2>Este é o meu modal</h2>
+                <p>Aqui é o conteúdo dos Projetos.</p>
+              </Modal>
+            </div>
           </motion.div>
+        
           <motion.div
-            initial={{ opacity: 0, y: 90 }}
+          initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-            <ServiceCard
-              image={<CheckCircle size={80} color="#FAD40F" />}
-              text="Execução"
-            />
+          <button onClick={handleOpenModal2}>
+              <ServiceCard
+                image={<CheckCircle size={80} color="#FAD40F" />}
+                text="Execução"
+              />
+            </button>
+            <div>
+            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2}>
+                <h2>Este é o meu modal</h2>
+                <p>Aqui é o conteúdo da Execução.</p>
+              </Modal>
+            </div>
           </motion.div>
+
           <motion.div
-            initial={{ opacity: 0, y: 90 }}
+          initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
           >
-            <ServiceCard
-              image={<Lightning size={80} color="#FAD40F" />}
-              text="Laudos Técnicos"
-            />
+          <button onClick={handleOpenModal3}>
+              <ServiceCard
+                image={<Lightning size={80} color="#FAD40F" />}
+                text="Laudos Técnicos"
+              />
+            </button>
+            <div>
+            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3}>
+                <h2>Este é o meu modal</h2>
+                <p>Aqui é o conteúdo dos Laudos Técnicos.</p>
+              </Modal>
+            </div>
           </motion.div>
+
           <motion.div
-            initial={{ opacity: 0, y: 90 }}
+          initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.9 }}
+            transition={{ duration: 0.5 }}
           >
-            <ServiceCard
-              image={<ClipboardText size={80} color="#FAD40F" />}
-              text="Consultoria de Serviço"
-            />
+          <button onClick={handleOpenModal4}>
+              <ServiceCard
+                image={<ClipboardText size={80} color="#FAD40F" />}
+                text="Consultoria de Serviço"
+              />
+            </button>
+            <div>
+            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4}>
+                <h2>Este é o meu modal</h2>
+                <p>Aqui é o conteúdo da Consultoria de Serviço.</p>
+              </Modal>
+            </div>
           </motion.div>
+
+      
         </div>
       </div>
       {/* Atuação no mercado */}
