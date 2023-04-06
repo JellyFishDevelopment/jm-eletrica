@@ -54,10 +54,10 @@ export default function Footer() {
             </ul>
           </div>
           <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
+          
         </div>
-      </div>
-
-      <div className="sm:flex flex sm:items-center sm:justify-between">
+        
+        <div className="sm:flex flex sm:items-center sm:justify-between">
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <Link
             to="/"
@@ -88,6 +88,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+      </div> 
     </footer>
   )
 }
