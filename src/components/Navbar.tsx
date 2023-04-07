@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logoImg from '../assets/logo-jm.png'
 import Dropdown from './Dropdown'
+import { WhatsappLogo } from 'phosphor-react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(true)
@@ -78,13 +79,16 @@ export default function Navbar() {
             </NavLink>
           </div>
         </div>
-        <p
-          className={`${
-            open ? 'block' : 'hidden'
-          } text-center w-full md:w-auto lg:text-xl 2xl:text-2xl font-bold text-white p-4 2xl:px-8 2xl:py-4 rounded-xl bg-[#969696]`}
-        >
-          (13) 99646-2507
-        </p>
+        <div>
+          <p
+            className={`${
+              open ? 'block' : 'hidden'
+            } text-center w-full md:w-auto lg:text-xl 2xl:text-2xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
+          >
+            <WhatsappLogo size={32}  /> 
+            (13) 99646-2507
+          </p>
+        </div>
       </div>
     </nav>
   )

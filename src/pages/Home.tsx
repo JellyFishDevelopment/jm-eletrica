@@ -53,7 +53,10 @@ export default function Home() {
     setIsOpenModal4(false);
   };
 
-  const items = ['Item 1', 'Item 2', 'Item 3'];
+  const items1 = ['Projetos Residenciais, Comerciais e Industriais', 'Projetos de Medição Agrupada (PMUC)', 'Projetos de Subestação BT/MT', 'Projetos de Geração Fotovoltaico'];
+  const items2 = ['Instalações Elétricas Residenciais e Comerciais', 'Automação Residencial e Comercial', 'Acompanhamento de Obras'];
+  const items3 = ['SPDA', 'NR10', 'Termografia', 'Qualidade de energia'];
+  const items4 = ['Consultor em análise de qualidade de energia', 'Consultor de PIE', 'Consultor para Credito de ICMS'];
 
   return (
     <div>
@@ -131,9 +134,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1} title="Minha Lista" list={items}>
-                <h2>Este é o meu modal</h2>
-                <p>Aqui é o conteúdo dos Projetos.</p>
+            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1} title="Projetos Elétricos" list={items1}>
               </Modal>
             </div>
           </motion.div>
@@ -151,9 +152,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2} title="Minha Lista" list={items}>
-                <h2>Este é o meu modal</h2>
-                <p>Aqui é o conteúdo da Execução.</p>
+            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2} title="Execução" list={items2}>
               </Modal>
             </div>
           </motion.div>
@@ -171,9 +170,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3} title="Minha Lista" list={items}>
-                <h2>Este é o meu modal</h2>
-                <p>Aqui é o conteúdo dos Laudos Técnicos.</p>
+            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3} title="Laudos Técnicos" list={items3}>
               </Modal>
             </div>
           </motion.div>
@@ -191,9 +188,7 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4} title="Minha Lista 4" list={items}>
-                <h2>Este é o meu modal</h2>
-                <p>Aqui é o conteúdo da Consultoria de Serviço.</p>
+            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4} title="Consultoria de Serviços" list={items4}>
               </Modal>
             </div>
           </motion.div>
