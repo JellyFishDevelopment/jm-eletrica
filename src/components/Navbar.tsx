@@ -1,9 +1,17 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logoImg from '../assets/logo-jm.png'
+import Dropdown from './Dropdown'
 
 export default function Navbar() {
   const [open, setOpen] = useState(true)
+
+  const options = [
+    { label: 'Projetos Elétricos', to: '/ProjetosEletricos' },
+    { label: 'Execução', to: '/option2' },
+    { label: 'Laudos Técnicos', to: '/laudos' },
+    { label: 'Consultoria de Serviço', to: '/option4' }
+  ];
 
   let activeStyle = {
     textDecoration: 'underline',
@@ -51,8 +59,9 @@ export default function Navbar() {
               to="/services"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Serviços
+              <Dropdown options={options} />
             </NavLink>
+            
             <NavLink
               className="my-2 text-center"
               to="/about"
