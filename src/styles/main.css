@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos base */
+
+
+
 .modal {
     position: fixed;
     top: 0;
