@@ -1,4 +1,10 @@
-import { CaretDown, ClipboardText, Lightning, NotePencil, CheckCircle } from 'phosphor-react'
+import {
+  CaretDown,
+  ClipboardText,
+  Lightning,
+  NotePencil,
+  CheckCircle
+} from 'phosphor-react'
 
 import logoImage from '/logo-jm.png'
 import logoImageFundo from '/logo-jm-fundo.png'
@@ -13,47 +19,45 @@ import { motion } from 'framer-motion'
 import Modal from '../components/Modal'
 import { useState } from 'react'
 
-
 export default function Home() {
-
-  const [isOpenModal1, setIsOpenModal1] = useState(false);
-  const [isOpenModal2, setIsOpenModal2] = useState(false);
-  const [isOpenModal3, setIsOpenModal3] = useState(false);
-  const [isOpenModal4, setIsOpenModal4] = useState(false);
+  const [isOpenModal1, setIsOpenModal1] = useState(false)
+  const [isOpenModal2, setIsOpenModal2] = useState(false)
+  const [isOpenModal3, setIsOpenModal3] = useState(false)
+  const [isOpenModal4, setIsOpenModal4] = useState(false)
 
   const handleOpenModal1 = () => {
-    setIsOpenModal1(true);
-  };
+    setIsOpenModal1(true)
+  }
 
   const handleCloseModal1 = () => {
-    setIsOpenModal1(false);
-  };
+    setIsOpenModal1(false)
+  }
 
   const handleOpenModal2 = () => {
-    setIsOpenModal2(true);
-  };
+    setIsOpenModal2(true)
+  }
 
   const handleCloseModal2 = () => {
-    setIsOpenModal2(false);
-  };
+    setIsOpenModal2(false)
+  }
 
   const handleOpenModal3 = () => {
-    setIsOpenModal3(true);
-  };
+    setIsOpenModal3(true)
+  }
 
   const handleCloseModal3 = () => {
-    setIsOpenModal3(false);
-  };
+    setIsOpenModal3(false)
+  }
 
   const handleOpenModal4 = () => {
-    setIsOpenModal4(true);
-  };
+    setIsOpenModal4(true)
+  }
 
   const handleCloseModal4 = () => {
-    setIsOpenModal4(false);
-  };
+    setIsOpenModal4(false)
+  }
 
-  const items = ['Item 1', 'Item 2', 'Item 3'];
+  const items = ['Item 1', 'Item 2', 'Item 3']
 
   return (
     <div>
@@ -81,33 +85,41 @@ export default function Home() {
             Laudos e Projetos Elétricos.
           </h2>
         </motion.div>
-        <div className="flex flex-col sm:flex-row mt-16">
-          <button className="self-start hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
-            <LinkNav to="/contact">
-              {' '}
-              <p>Faça seu orçamento agora</p>
-            </LinkNav>
-          </button>
 
-          <button className="self-start hidden sm:block bg-[#FFA228] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
-            <LinkNav to="/services">
-              {' '}
-              <p>Conheça nossos serviços</p>
-            </LinkNav>
-          </button>
-        </div>
-          <Link
-            to="#servicos"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="cursor-pointer"
-          >
-            <CaretDown className="hidden lg:block " size={64} color="#fff" />
-          </Link>
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
+          <div className="flex flex-col sm:flex-row mt-16">
+            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+              <LinkNav to="/contact">
+                {' '}
+                <p>Faça seu orçamento agora</p>
+              </LinkNav>
+            </button>
+
+            <button className="self-start mx-4 hidden sm:block bg-[#FFA228] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+              <LinkNav to="/services">
+                {' '}
+                <p>Conheça nossos serviços</p>
+              </LinkNav>
+            </button>
+          </div>
+        </motion.div>
+
+        <Link
+          to="#servicos"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="cursor-pointer self-center"
+        >
+          <CaretDown className="hidden lg:block " size={64} color="#fff" />
+        </Link>
       </div>
-
 
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
@@ -131,27 +143,37 @@ export default function Home() {
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal1} onClose={handleCloseModal1} title="Minha Lista" list={items}>
+              <Modal
+                isOpen={isOpenModal1}
+                onClose={handleCloseModal1}
+                title="Minha Lista"
+                list={items}
+              >
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo dos Projetos.</p>
               </Modal>
             </div>
           </motion.div>
-        
+
           <motion.div
-          initial={{ opacity: 0, y: 90 }}
+            initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-          <button onClick={handleOpenModal2}>
+            <button onClick={handleOpenModal2}>
               <ServiceCard
                 image={<CheckCircle size={80} color="#FAD40F" />}
                 text="Execução"
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal2} onClose={handleCloseModal2} title="Minha Lista" list={items}>
+              <Modal
+                isOpen={isOpenModal2}
+                onClose={handleCloseModal2}
+                title="Minha Lista"
+                list={items}
+              >
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo da Execução.</p>
               </Modal>
@@ -159,19 +181,24 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, y: 90 }}
+            initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-          <button onClick={handleOpenModal3}>
+            <button onClick={handleOpenModal3}>
               <ServiceCard
                 image={<Lightning size={80} color="#FAD40F" />}
                 text="Laudos Técnicos"
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal3} onClose={handleCloseModal3} title="Minha Lista" list={items}>
+              <Modal
+                isOpen={isOpenModal3}
+                onClose={handleCloseModal3}
+                title="Minha Lista"
+                list={items}
+              >
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo dos Laudos Técnicos.</p>
               </Modal>
@@ -179,26 +206,29 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-          initial={{ opacity: 0, y: 90 }}
+            initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-          <button onClick={handleOpenModal4}>
+            <button onClick={handleOpenModal4}>
               <ServiceCard
                 image={<ClipboardText size={80} color="#FAD40F" />}
                 text="Consultoria de Serviço"
               />
             </button>
             <div>
-            <Modal isOpen={isOpenModal4} onClose={handleCloseModal4} title="Minha Lista 4" list={items}>
+              <Modal
+                isOpen={isOpenModal4}
+                onClose={handleCloseModal4}
+                title="Minha Lista 4"
+                list={items}
+              >
                 <h2>Este é o meu modal</h2>
                 <p>Aqui é o conteúdo da Consultoria de Serviço.</p>
               </Modal>
             </div>
           </motion.div>
-
-      
         </div>
       </div>
       {/* Atuação no mercado */}
