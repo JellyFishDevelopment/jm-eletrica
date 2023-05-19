@@ -13,6 +13,7 @@
     "framer-motion": "^8.5.5",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
     "react-router-dom": "^6.8.0",
