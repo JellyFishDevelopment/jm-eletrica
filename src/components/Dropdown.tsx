@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink, To } from 'react-router-dom'
 
 interface DropdownProps {
-  options: { label: string; value: string }[]
+  options: { label: string; link: string }[]
 }
 
 const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
@@ -22,11 +22,11 @@ const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
       </button>
       {isOpen && (
         <ul className="dropdown-options">
-          {options.map((option: any) => (
+          {options.map((option: any, index: any) => (
             <NavLink to={option.link}>
               <li
                 className="dropdown-option"
-                key={option.value}
+                key={index}
                 onClick={() => handleSelect(option.value)}
               >
                 {option.label}
