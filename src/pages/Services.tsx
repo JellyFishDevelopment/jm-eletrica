@@ -1,4 +1,10 @@
-import { ClipboardText, Lightning, NotePencil, CheckCircle, Check } from 'phosphor-react'
+import {
+  ClipboardText,
+  Lightning,
+  NotePencil,
+  CheckCircle,
+  Check
+} from 'phosphor-react'
 import ServiceCard from '../components/ServiceCard'
 import laudoUm from '/laudo-1.png'
 import laudoDois from '/laudo-2.png'
@@ -9,6 +15,7 @@ import laudoSeis from '/laudo-6.jpeg'
 import imagemConsultoria from '/consultorias.png'
 import imagemLaudo from '/laudostecnicos.png'
 import imagemProjeto from '/projetoseletricos.png'
+import imagemProjetos from '/projetos.png'
 import CartaoServico from '../components/CartaoServico'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logoImage from '/logo-jm.png'
@@ -69,7 +76,7 @@ export default function Services() {
             />
           </motion.div>
 
-            <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -113,7 +120,7 @@ export default function Services() {
           className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24"
         >
           <img
-            src={imagemProjeto}
+            src={imagemProjetos}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />

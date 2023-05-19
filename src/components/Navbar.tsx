@@ -8,11 +8,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(true)
 
   const options = [
-    { label: 'Projetos Elétricos', to: '/ProjetosEletricos' },
-    { label: 'Execução', to: '/option2' },
-    { label: 'Laudos Técnicos', to: '/laudos' },
-    { label: 'Consultoria de Serviço', to: '/option4' }
-  ];
+    { label: 'Projetos Elétricos', link: '/projetos' },
+    { label: 'Execução', link: '/execucao' },
+    { label: 'Laudos Técnicos', link: '/laudos' },
+    { label: 'Consultoria de Serviço', link: '/consultoria' }
+  ]
 
   let activeStyle = {
     textDecoration: 'underline',
@@ -47,7 +47,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
+          <div className="flex items-center flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
             <NavLink
               to="/"
               className="my-2 text-center"
@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               <Dropdown options={options} />
             </NavLink>
-            
+
             <NavLink
               className="my-2 text-center"
               to="/about"
@@ -79,13 +79,13 @@ export default function Navbar() {
             </NavLink>
           </div>
         </div>
-        <div>
+        <div className="flex items-center m-auto sm:m-0">
+          <WhatsappLogo color="#22c55e" size={32} />
           <p
             className={`${
               open ? 'block' : 'hidden'
             } text-center w-full md:w-auto lg:text-xl 2xl:text-2xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
           >
-            <WhatsappLogo size={32}  /> 
             (13) 99646-2507
           </p>
         </div>
