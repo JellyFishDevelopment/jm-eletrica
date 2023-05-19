@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const ModalWrapper = styled.div`
   position: fixed;
@@ -10,7 +10,7 @@ const ModalWrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 9999;
-`;
+`
 
 const ModalOverlay = styled.div`
   position: absolute;
@@ -19,7 +19,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-`;
+`
 
 const ModalContent = styled.div`
   background-color: white;
@@ -29,32 +29,32 @@ const ModalContent = styled.div`
   position: relative;
   z-index: 1;
   width: 50%;
-`;
+`
 
 const ModalClose = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-`;
+`
 
 const ModalTitle = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-`;
+`
 
 const ModalList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-`;
+`
 
 const ModalListItem = styled.li`
   margin-bottom: 10px;
-`;
+`
 
-const Modal = ({ isOpen, onClose, title, list }) => {
-  if (!isOpen) return null;
+const Modal = ({ isOpen, onClose, title, list }: any) => {
+  if (!isOpen) return null
 
   return (
     <ModalWrapper>
@@ -63,13 +63,13 @@ const Modal = ({ isOpen, onClose, title, list }) => {
         <ModalClose onClick={onClose}>X</ModalClose>
         <ModalTitle>{title}</ModalTitle>
         <ModalList>
-          {list.map((item, index) => (
+          {list.map((item: any, index: any) => (
             <ModalListItem key={index}>{item}</ModalListItem>
           ))}
         </ModalList>
       </ModalContent>
     </ModalWrapper>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal
