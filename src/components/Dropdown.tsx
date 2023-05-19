@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, To } from 'react-router-dom'
 
 interface DropdownProps {
   options: { label: string; value: string }[]
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options }) => {
+const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [selectedOption, setSelectedOption] = useState<string>('')
 
@@ -22,7 +22,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options }) => {
       </button>
       {isOpen && (
         <ul className="dropdown-options">
-          {options.map(option => (
+          {options.map((option: any) => (
             <NavLink to={option.link}>
               <li
                 className="dropdown-option"
