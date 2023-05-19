@@ -13,7 +13,7 @@ module.exports = {
         'fourth-banner': "url('/banner-4.png')",
         'fifth-banner': "url('/banner-5.png')",
         'sixth-banner': "url('/banner-6.png')",
-        'seventh-banner': "url('/banner-7.png')",
+        'seventh-banner': "url('/banner-services.png')",
         'eighth-banner': "url('/banner-8.png')"
       }
     }

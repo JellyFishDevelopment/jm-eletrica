@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ModalWrapper = styled.div`
@@ -66,6 +67,11 @@ const Modal = ({ isOpen, onClose, title, list }: any) => {
           {list.map((item: any, index: any) => (
             <ModalListItem key={index}>{item}</ModalListItem>
           ))}
+          <NavLink to="/contact">
+            <button className="flex rounded-md justify-center p-4 w-1/2 text-center  my-4 mx-auto outline-none bg-[#5C5C5C] text-white">
+              Faça seu orçamento!
+            </button>
+          </NavLink>
         </ModalList>
       </ModalContent>
     </ModalWrapper>
