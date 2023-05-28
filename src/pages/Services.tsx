@@ -58,7 +58,7 @@ export default function Services() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h1 className="text-center font-bold text-6xl sm:text-8xl">
+          <h1 className="text-center font-bold text-6xl sm:text-6xl">
             Serviços
           </h1>
         </motion.div>
