@@ -47,7 +47,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex items-center flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
+          <div className="flex items-center flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-1xl  md:border-0 md:bg-white  ">
             <NavLink
               to="/"
               className="my-2 text-center"
