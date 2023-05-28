@@ -62,7 +62,7 @@ export default function Services() {
             Serviços
           </h1>
         </motion.div>
-        {/* Serviços */}
+        {/* Serviços
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <motion.div
             initial={{ opacity: 0, y: 90 }}
@@ -110,7 +110,7 @@ export default function Services() {
               text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
             />
           </motion.div>
-        </div>
+        </div> */}
         {/* Serviços + Imagens */}
         <motion.div
           initial={{ opacity: 0, y: 90 }}

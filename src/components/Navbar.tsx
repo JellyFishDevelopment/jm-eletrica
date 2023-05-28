@@ -53,7 +53,7 @@ export default function Navbar() {
               className="my-2 text-center"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Início
+              INÍCIO
             </NavLink>
             <NavLink
               className="my-2 text-center"
@@ -68,14 +68,14 @@ export default function Navbar() {
               to="/about"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Sobre nós
+              SOBRE NÓS
             </NavLink>
             <NavLink
               className="my-2 text-center"
               to="/contact"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Contato
+              CONTATO
             </NavLink>
           </div>
         </div>

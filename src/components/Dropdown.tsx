@@ -17,7 +17,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
   return (
     <div className="dropdown-container">
       <button className="dropdown-button" onClick={() => setIsOpen(!isOpen)}>
-        <span>{selectedOption ? selectedOption : 'Serviços'}</span>
+        <span>{selectedOption ? selectedOption : 'SERVIÇOS'}</span>
         <span className={`arrow ${isOpen ? 'up' : 'down'}`} />
       </button>
       {isOpen && (

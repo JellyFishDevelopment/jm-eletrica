@@ -93,7 +93,7 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-      {/* Imagens elétrica */}
+      {/* Imagens elétrica
       <div className="p-8 bg-white flex flex-col sm:flex-row justify-evenly">
         <motion.div
           initial={{ opacity: 0, y: -90 }}
@@ -119,8 +119,8 @@ export default function About() {
             alt="Homem operando cabos"
           />
         </motion.div>
-      </div>
-      {/* Experiência e agilidade */}
+      </div> */}
+      {/* Experiência e agilidade
       <div className="p-8 sm:p-16 bg-[#969696]">
         <motion.div
           initial={{ opacity: 0, y: -90 }}
@@ -153,8 +153,8 @@ export default function About() {
 
           </p>
         </motion.div>
-      </div>
-      {/* Trabalhos recentes */}
+      </div> */}
+      {/* Trabalhos recentes
       <div className="text-center">
         <motion.div
           ref={carousel}
@@ -181,7 +181,7 @@ export default function About() {
         <button className="bg-[#FAD40F] w-1/2  text-white font-medium rounded-xl p-4 my-4">
           <LinkNav to="/trabalhos">Ver mais trabalhos</LinkNav>
         </button>
-      </div>
+      </div> */}
       <BannerContato />
       <Footer />
     </div>
