@@ -75,7 +75,7 @@ export default function About() {
         >
           <h3 className="font-normal text-5xl">JM Elétrica</h3>
           <p className="font-bold text-2xl">Engenharia elétrica de qualidade</p>
-          <p className="font-light text-2xl my-16">
+          <p className="font-light text-1xl my-16">
           A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
           Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. 
           Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.

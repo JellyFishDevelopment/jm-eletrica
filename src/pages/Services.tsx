@@ -192,7 +192,7 @@ export default function Services() {
 
         {/* Carousel */}
         <div className="bg-[#969696] p-8">
-          <h2 className="text-white text-center font-bold text-5xl sm:text-7xl">
+          <h2 className="text-white text-center font-bold text-5xl sm:text-4xl">
             Saiba mais sobre nossos serviços
           </h2>
           <motion.div
