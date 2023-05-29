@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const withMT = require('@material-tailwind/react/utils/withMT')
+module.exports = withMT({
   content: ['./src/**/*.tsx', './index.html'],
   theme: {
     fontFamily: {
@@ -14,9 +16,13 @@ module.exports = {
         'fifth-banner': "url('/banner-5.png')",
         'sixth-banner': "url('/banner-6.png')",
         'seventh-banner': "url('/banner-services.png')",
-        'eighth-banner': "url('/banner-8.png')"
+        'eighth-banner': "url('/banner-8.png')",
+        'carrousel-1': "url('/carrousel-1.png')",
+        'carrousel-2': "url('/carrousel-2.png')",
+        'carrousel-3': "url('/carrousel-3.png')",
+        'carrousel-4': "url('/carrousel-4.png')"
       }
     }
   },
   plugins: []
-}
+})

@@ -8,6 +8,7 @@ import {
 
 import logoImage from '/logo-jm.png'
 import logoImageFundo from '/logo-jm-fundo.png'
+import { Carousel, CarouselStylesType } from '@material-tailwind/react'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
@@ -20,6 +21,7 @@ import Modal from '../components/Modal'
 import { useState } from 'react'
 
 export default function Home() {
+  const [currentState, setCurrentState] = useState(0)
   const [isOpenModal1, setIsOpenModal1] = useState(false)
   const [isOpenModal2, setIsOpenModal2] = useState(false)
   const [isOpenModal3, setIsOpenModal3] = useState(false)
@@ -87,7 +89,89 @@ export default function Home() {
         placeholder="Mensagem:"
       />
       {/* Banner principal */}
-      <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between item-center bg-cover bg-no-repeat  text-white">
+      <div className="w-full flex flex-col justify-between item-center  text-white">
+        <Carousel
+          autoplay={true}
+          loop={true}
+          className="relative"
+          transition={{ duration: 2 }}
+          prevArrow={({ handlePrev }) => {}}
+          nextArrow={({ handleNext }) => {}}
+          navigation={({ setActiveIndex, activeIndex, length }) => {}}
+        >
+          <img
+            src="carrousel-1.png"
+            alt="image 1"
+            className="sm:h-[689px] w-full object-cover"
+          />
+          <img
+            src="carrousel-2.png"
+            alt="image 1"
+            className="sm:h-[689px] w-full object-cover"
+          />
+          <img
+            src="carrousel-3.png"
+            alt="image 1"
+            className="sm:h-[689px] w-full object-cover"
+          />
+          <img
+            src="carrousel-4.png"
+            alt="image 1"
+            className="sm:h-[689px] w-full object-cover"
+          />
+        </Carousel>
+        <div className="absolute w-full px-8 pb-8 pt-16">
+          <motion.div
+            initial={{ opacity: 0, x: -90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+          >
+            <h2 className="mt-16 font-bold text-4xl sm:text-5xl text-white">
+              Conheça o nosso portifólio.
+            </h2>
+            <h2 className="font-bold text-4xl sm:text-5xl md:text-7xl text-white">
+              Laudos e Projetos Elétricos.
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+          >
+            <div className="flex flex-col sm:flex-row mt-20">
+              <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+                <LinkNav to="/contact">
+                  {' '}
+                  <p>Faça seu orçamento agora</p>
+                </LinkNav>
+              </button>
+
+              <button className="self-start mx-4 hidden sm:block bg-[#FFA228] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+                <LinkNav to="/services">
+                  {' '}
+                  <p>Conheça nossos serviços</p>
+                </LinkNav>
+              </button>
+            </div>
+          </motion.div>
+
+          <Link
+            to="#servicos"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="flex justify-center cursor-pointer self-center text-center mt-16"
+          >
+            <CaretDown className="hidden lg:block " size={64} color="#fff" />
+          </Link>
+        </div>
+      </div>
+
+      {/* <div className="bg-eighth-banner sm:h-[689px] px-8 pb-8 pt-16 w-full flex flex-col justify-between item-center bg-cover bg-no-repeat  text-white">
         <motion.div
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -135,7 +219,7 @@ export default function Home() {
         >
           <CaretDown className="hidden lg:block " size={64} color="#fff" />
         </Link>
-      </div>
+      </div> */}
 
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
