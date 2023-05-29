@@ -20,7 +20,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="p-2 2xl:p-4 font-light text-xl  w-full bg-white z-10">
+    <nav className="p-2 2xl:p-4 font-light text-md w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/">
           <img src={logoImg} className="h-16 2xl:w-40 " alt="Logo JM" />
@@ -28,7 +28,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none    dark:hover:bg-[#E6E6E6]"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:hover:bg-[#E6E6E6]"
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
@@ -47,13 +47,13 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${open ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <div className="flex items-center flex-col md:flex-row md:space-x-16 md:mt-0 lg:text-xl 2xl:text-2xl  md:border-0 md:bg-white  ">
+          <div className="flex items-center flex-col md:flex-row md:space-x-16 md:mt-0 md:text-md 3md:text-2xl  md:border-0 md:bg-white  ">
             <NavLink
               to="/"
               className="my-2 text-center"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Início
+              INÍCIO
             </NavLink>
             <NavLink
               className="my-2 text-center"
@@ -68,14 +68,14 @@ export default function Navbar() {
               to="/about"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Sobre nós
+              SOBRE NÓS
             </NavLink>
             <NavLink
               className="my-2 text-center"
               to="/contact"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Contato
+              CONTATO
             </NavLink>
           </div>
         </div>

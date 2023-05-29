@@ -58,11 +58,11 @@ export default function Services() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h1 className="text-center font-bold text-6xl sm:text-8xl">
+          <h1 className="text-center font-bold text-6xl sm:text-6xl">
             Serviços
           </h1>
         </motion.div>
-        {/* Serviços */}
+        {/* Serviços
         <div className="flex flex-col p-8 sm:flex-row sm:justify-evenly mt-32">
           <motion.div
             initial={{ opacity: 0, y: 90 }}
@@ -110,7 +110,7 @@ export default function Services() {
               text="Através de laudos específicos, levamos mais controle e prevenção aos equipamentos e instalações elétricas. A realização do laudo elétrico é vital para avaliar as condições da infraestrutura da sua empresa e manter o fornecimento de energia para as atividades do dia a dia em boas condições. "
             />
           </motion.div>
-        </div>
+        </div> */}
         {/* Serviços + Imagens */}
         <motion.div
           initial={{ opacity: 0, y: 90 }}
@@ -192,7 +192,7 @@ export default function Services() {
 
         {/* Carousel */}
         <div className="bg-[#969696] p-8">
-          <h2 className="text-white text-center font-bold text-5xl sm:text-7xl">
+          <h2 className="text-white text-center font-bold text-5xl sm:text-4xl">
             Saiba mais sobre nossos serviços
           </h2>
           <motion.div

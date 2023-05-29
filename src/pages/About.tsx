@@ -62,7 +62,7 @@ export default function About() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h2 className="font-bold text-6xl sm:text-8xl text-white text-center">
+          <h2 className="font-bold text-6xl sm:text-6xl text-white text-center">
             Sobre nós
           </h2>
         </motion.div>
@@ -73,9 +73,9 @@ export default function About() {
           transition={{ duration: 1.1 }}
           className="text-white p-8 sm:p-16 bg-[#B6B5B0] rounded-xl sm:w-3/4 mx-auto my-16"
         >
-          <h3 className="font-normal text-7xl">JM Elétrica</h3>
-          <p className="font-bold text-4xl">Engenharia elétrica de qualidade</p>
-          <p className="font-light text-3xl my-16">
+          <h3 className="font-normal text-5xl">JM Elétrica</h3>
+          <p className="font-bold text-2xl">Engenharia elétrica de qualidade</p>
+          <p className="font-light text-1xl my-16">
           A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
           Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. 
           Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
@@ -83,7 +83,7 @@ export default function About() {
           <div className="text-center">
             <button
               type="button"
-              className=" px-4 py-6 mt-4 font-bold text-2xl bg-[#FAD40F] text-white rounded-full"
+              className=" px-4 py-6 mt-4 font-bold text-1xl bg-[#FAD40F] text-white rounded-full"
             >
               <LinkNav to="/services">
                 {' '}
@@ -93,7 +93,7 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-      {/* Imagens elétrica */}
+      {/* Imagens elétrica
       <div className="p-8 bg-white flex flex-col sm:flex-row justify-evenly">
         <motion.div
           initial={{ opacity: 0, y: -90 }}
@@ -119,8 +119,8 @@ export default function About() {
             alt="Homem operando cabos"
           />
         </motion.div>
-      </div>
-      {/* Experiência e agilidade */}
+      </div> */}
+      {/* Experiência e agilidade
       <div className="p-8 sm:p-16 bg-[#969696]">
         <motion.div
           initial={{ opacity: 0, y: -90 }}
@@ -153,8 +153,8 @@ export default function About() {
 
           </p>
         </motion.div>
-      </div>
-      {/* Trabalhos recentes */}
+      </div> */}
+      {/* Trabalhos recentes
       <div className="text-center">
         <motion.div
           ref={carousel}
@@ -181,7 +181,7 @@ export default function About() {
         <button className="bg-[#FAD40F] w-1/2  text-white font-medium rounded-xl p-4 my-4">
           <LinkNav to="/trabalhos">Ver mais trabalhos</LinkNav>
         </button>
-      </div>
+      </div> */}
       <BannerContato />
       <Footer />
     </div>

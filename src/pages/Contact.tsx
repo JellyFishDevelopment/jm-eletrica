@@ -32,10 +32,10 @@ export default function Contact() {
       />
       {/* Banner */}
       <div className="bg-fourth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
-        <h2 className="font-bold text-center my-10 text-5xl sm:text-8xl">
+        <h2 className="font-bold text-center my-10 text-5xl sm:text-6xl">
           Contato
         </h2>
-        <p className="font-light text-center text-3xl">
+        <p className="font-light text-center text-2xl">
           Entre em contato conosco para fazer seu orçamento, é simples e
           gratuito!
         </p>
