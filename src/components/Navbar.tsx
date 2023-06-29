@@ -9,9 +9,9 @@ export default function Navbar() {
 
   const options = [
     { label: 'Projetos Elétricos', link: '/projetos' },
-    { label: 'Execução', link: '/execucao' },
+    // { label: 'Execução', link: '/execucao' },
     { label: 'Laudos Técnicos', link: '/laudos' },
-    { label: 'Consultoria de Serviço', link: '/consultoria' }
+    // { label: 'Consultoria de Serviço', link: '/consultoria' }
   ]
 
   let activeStyle = {

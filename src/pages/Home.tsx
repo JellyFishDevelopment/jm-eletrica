@@ -252,7 +252,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -272,7 +272,7 @@ export default function Home() {
                 list={items2}
               ></Modal>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 90 }}
@@ -296,7 +296,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -316,7 +316,7 @@ export default function Home() {
                 list={items4}
               ></Modal>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* Quem somos - página inicial */}
@@ -330,7 +330,7 @@ export default function Home() {
         >
           <img
             src={logoImageFundo}
-            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto rounded-full"
+            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto rounded-half"
             alt="Logo"
           />
           <div className="text-center sm:w-1/2 sm:text-left mx-auto text-black">

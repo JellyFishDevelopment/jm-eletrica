@@ -55,14 +55,14 @@ export default function About() {
         placeholder="Mensagem:"
       />
       {/* Sobre nós */}
-      <div className="bg-[#969696] p-8 ">
+      <div className="bg-[#fff] p-8 ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h2 className="font-bold text-6xl sm:text-6xl text-white text-center">
+          <h2 className="font-bold text-6xl sm:text-6xl text-black text-center">
             Sobre nós
           </h2>
         </motion.div>
@@ -71,19 +71,23 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 1.1 }}
-          className="text-white p-8 sm:p-16 bg-[#B6B5B0] rounded-xl sm:w-3/4 mx-auto my-16"
+          className="text-black p-8 sm:p-16 bg-[#d3d3d3] rounded-xl sm:w-3/4 mx-auto my-16"
         >
-          <h3 className="font-normal text-5xl">JM Elétrica</h3>
-          <p className="font-bold text-2xl">Engenharia elétrica de qualidade</p>
-          <p className="font-light text-1xl my-16">
+          
+          <h3 className="font-bold underline my-5 text-3xl text-[#ffbc00]">Quem somos</h3>
+          <p className="font-bold text-2xl">JM SOLUÇÃO EM ENERGIA</p>
+          <p className="font-light text-1xl my-5">
           A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
-          Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. 
-          Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
+          Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
           </p>
+
+          <h3 className="font-bold underline text-3xl text-[#ffbc00]">Visão</h3>
+          <p className="font-light text-1xl my-5">
+            Nossa visão é manter a qualidade e excelência, fornecendo serviços e soluções integradas para se tornar referência no mercado, desta forma conquistando confiança e entregando cada vez mais eficiência nos serviços prestados.</p>
           <div className="text-center">
             <button
               type="button"
-              className=" px-4 py-6 mt-4 font-bold text-1xl bg-[#FAD40F] text-white rounded-full"
+              className=" px-4 py-6 mt-4 font-bold text-1xl bg-[#ffbc00] text-white rounded-full"
             >
               <LinkNav to="/services">
                 {' '}

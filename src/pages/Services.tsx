@@ -50,7 +50,7 @@ export default function Services() {
         avatar={logoImage}
         placeholder="Mensagem:"
       />
-      <div className="bg-seventh-banner bg-cover bg-no-repeat pt-16 h-96 text-white">
+      <div className="p-8 sm:p-16 h-96 text-white bg-[#818181] pt-16 h-96 text-black">
         {/* Título */}
         <motion.div
           initial={{ opacity: 0, x: -90 }}
@@ -58,7 +58,7 @@ export default function Services() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <h1 className="text-center font-bold text-6xl sm:text-6xl">
+          <h1 className="text-center font-bold text-5xl sm:text-6xl">
             Serviços
           </h1>
         </motion.div>
@@ -111,6 +111,7 @@ export default function Services() {
             />
           </motion.div>
         </div> */}
+
         {/* Serviços + Imagens */}
         <motion.div
           initial={{ opacity: 0, y: 90 }}
@@ -120,7 +121,7 @@ export default function Services() {
           className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24"
         >
           <img
-            src={imagemProjetos}
+            src={imagemProjeto}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
@@ -141,17 +142,19 @@ export default function Services() {
         >
           <CartaoServico
             image={<CheckCircle size={80} color="#FAD40F" />}
-            title="Execução"
-            description="A execução é de suma importância para realizar instalações elétricas competentes, a fim de que se tenha garantia da qualidade do serviço executado, feito por profissionais especializados em instalações elétricas."
-            link="/execucao"
+            title="Laudos Técnicos"
+            description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
+            link="/laudos"
           />
           <img
-            src={imagemConsultoria}
+            src={imagemLaudo}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
         </motion.div>
-        <motion.div
+
+
+        {/* <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -159,7 +162,7 @@ export default function Services() {
           className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-24"
         >
           <img
-            src={imagemProjeto}
+            src={imagemLaudo}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
@@ -169,8 +172,8 @@ export default function Services() {
             description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
             link="/laudos"
           />
-        </motion.div>
-        <motion.div
+        </motion.div> */}
+        {/* <motion.div
           initial={{ opacity: 0, y: -90 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
@@ -184,13 +187,13 @@ export default function Services() {
             link="/consultoria"
           />
           <img
-            src={imagemLaudo}
+            src={imagemConsultoria}
             className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
-        </motion.div>
+        </motion.div> */}
 
-        {/* Carousel */}
+        {/* Carousel
         <div className="bg-[#969696] p-8">
           <h2 className="text-white text-center font-bold text-5xl sm:text-4xl">
             Saiba mais sobre nossos serviços
@@ -219,7 +222,7 @@ export default function Services() {
               ))}
             </motion.div>
           </motion.div>
-        </div>
+        </div> */}
         <hr />
         <Footer />
       </div>

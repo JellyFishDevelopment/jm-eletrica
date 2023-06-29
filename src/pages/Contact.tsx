@@ -41,7 +41,7 @@ export default function Contact() {
         </p>
       </div>
       {/* Formulário */}
-      <div className="bg-[#969696] p-12">
+      <div className="bg-[#d3d3d3] p-12">
         <form
           className="bg-[#818181] sm:w-1/3 mx-auto p-8 flex flex-col"
           action="https://formsubmit.co/jellyfish.teste@gmail.com"
