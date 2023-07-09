@@ -14,12 +14,12 @@ export default function Footer() {
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Contato
           </h2>
-          <ul className="text-black flex flex-col ">
+          <ul className="text-black flex flex-col" style={{ fontSize: 12}}>
             <li className="mb-4 ">JM Soluções em Energia LTDA.</li>
             <li className="mb-4 ">CNPJ: 44.312.966/0001-30</li>
             <li className="mb-4 ">
-              Av. Antônio Emmerich 499 – Bairro Vila Cascatinha - São Vicente /
-              SP
+              <p>Av. Antônio Emmerich 499 – Bairro Vila Cascatinha </p>
+              <p>- São Vicente / SP</p>
             </li>
             <li className="mb-4 ">Telefone: (13) 99646-2507</li>
             <li className="mb-4 ">E-mail: jmsolucoeseletricas@hotmail.com</li>
@@ -30,14 +30,14 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Menu
             </h2>
-            <ul className="text-black flex flex-col ">
-              <Link className="mb-4 hover:underline" to="/">
+            <ul className="text-black flex flex-col" style={{ fontSize: 12}}>
+              <Link className="mb-4 hover:underline" to="/about">
                 Sobre nós
               </Link>
-              <Link className="mb-4 hover:underline" to="/">
+              <Link className="mb-4 hover:underline" to="/contact">
                 Contato
               </Link>
-              <Link className="mb-4 hover:underline" to="/">
+              <Link className="mb-4 hover:underline" to="/services">
                 Serviços
               </Link>
               <Link className="mb-4 hover:underline" to="/Contact">
@@ -49,11 +49,9 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Nossos Serviços
             </h2>
-            <ul className="text-black flex flex-col ">
+            <ul className="text-black flex flex-col "  style={{ fontSize: 12}}>
               <li className="mb-4 ">Projetos Elétricos</li>
-              <li className="mb-4 ">Execução</li>
               <li className="mb-4 ">Laudos Técnicos</li>
-              <li className="mb-4 ">Consultoria de Serviço</li>
             </ul>
           </div>
           <div>
