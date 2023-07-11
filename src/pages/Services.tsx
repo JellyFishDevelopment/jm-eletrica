@@ -122,7 +122,7 @@ export default function Services() {
         >
           <img
             src={imagemProjeto}
-            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
+            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96 sm:h-96"
             alt="Imagem de laudo e instalações elétricas"
           />
           <CartaoServico
