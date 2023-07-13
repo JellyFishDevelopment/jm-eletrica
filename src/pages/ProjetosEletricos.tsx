@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 import logoImage from '/logo-jm.png'
 import { Link as LinkNav } from 'react-router-dom'
 import termo from '/laudo-3.png'
-import Servicos from '../components/servicos'
 
 
 export default function ProjetosEletricos() {
