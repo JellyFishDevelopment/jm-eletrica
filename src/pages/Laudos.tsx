@@ -22,14 +22,16 @@ export default function Laudos() {
         placeholder="Mensagem:"
       />
       {/* Cabeçalho */}
-      <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">
+      <div className="p-8 sm:p-16 h-60 text-black bg-[#f2f2f2]">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-center font-bold text-5xl sm:text-6xl">Laudos</h1>
+          <h1 className="text-center font-bold text-5xl sm:text-4xl">
+            Laudos
+          </h1>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 90 }}
@@ -37,7 +39,7 @@ export default function Laudos() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-          <p className="font-light text-center text-xl sm:text-1xl mt-8">
+          <p className="font-light text-center text-xl sm:text-lg mt-8">
             O laudo elétrico é um relatório que te traz um panorama geral sobre
             a sua instalação elétrica. A partir dele é possível entender as
             necessidades e inconformidades do sistema, te trazendo pontos de

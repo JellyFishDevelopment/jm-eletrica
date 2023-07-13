@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="p-2 2xl:p-4 font-light text-md w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/">
-          <img src={logoImg} className="h-16 2xl:w-40 " alt="Logo JM" />
+          <img src={logoImg} className="h-20 2xl:w-50 " alt="Logo JM" />
         </Link>
         <button
           onClick={() => setOpen(!open)}
@@ -84,7 +84,7 @@ export default function Navbar() {
           <p
             className={`${
               open ? 'block' : 'hidden'
-            } text-center w-full md:w-auto lg:text-xl 2xl:text-2xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
+            } text-center w-full md:w-auto lg:text-xl 2xl:text-1xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
           >
             (13) 99646-2507
           </p>
