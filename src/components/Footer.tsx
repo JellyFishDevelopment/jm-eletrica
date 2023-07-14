@@ -64,7 +64,8 @@ export default function Footer() {
             <div className="flex justify-center">
               <div className="flex mt-4 space-x-6  sm:mt-0">
                 <Link
-                  to="/"
+                  target="_blank"
+                  to="https://www.instagram.com/eng.jairmelo/"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg
