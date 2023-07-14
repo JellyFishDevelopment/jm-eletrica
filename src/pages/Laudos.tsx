@@ -7,6 +7,8 @@ import { Link as LinkNav } from 'react-router-dom'
 import imagemProjeto from '/projetoseletricos.png'
 import termo from '/laudo-3.png'
 import spda from '/laudo-2.png'
+import nr from '/laudo-1.png'
+import laudoicms from '/laudoicms.png'
 
 export default function Laudos() {
   return (
@@ -134,7 +136,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={termo}
+              src={nr}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -146,9 +148,11 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO TERMOGRÁFICO</h3>
+            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO INSTALAÇÕES NR-10</h3>
             <p className="text-black font-light text-xl my-4">
-            É uma técnica de inspeção não destrutiva, utilizada para avaliação preventiva de componentes e instalações elétricas. Utilizado para medir a temperatura de determinados pontos através da radiação infravermelha, ou seja, o laudo termográfico detecta e informa as altas temperaturas nos mais variados componentes elétricos e eletrônicos tais como: painéis, transformadores, motores entre outros, e assim evita as panes e princípios de incêndios.
+            A segurança em instalações elétricas deve ser bem compreendida e assimilada pelos profissionais que trabalham com energia elétrica. A finalidade do laudo é evidenciar as medidas de controle e sistemas preventivos adotados nas empresas, de forma a garantir a saúde e a segurança dos trabalhadores que, indireta ou diretamente, interajam com as instalações elétricas.
+            Com isso, há a redução de problemas como curtos-circuitos, acidentes de origem elétrica, incêndios, explosões entre outros.
+
             </p>
 
             <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
@@ -171,7 +175,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={termo}
+              src={nr}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -183,9 +187,10 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO TERMOGRÁFICO</h3>
+            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO DE PIE
+            </h3>
             <p className="text-black font-light text-xl my-4">
-            É uma técnica de inspeção não destrutiva, utilizada para avaliação preventiva de componentes e instalações elétricas. Utilizado para medir a temperatura de determinados pontos através da radiação infravermelha, ou seja, o laudo termográfico detecta e informa as altas temperaturas nos mais variados componentes elétricos e eletrônicos tais como: painéis, transformadores, motores entre outros, e assim evita as panes e princípios de incêndios.
+            A consultoria em PIE consiste em elaborar ou levantar os documentos pertinentes as instalações elétricas, mostrando a necessidade de um sistema organizado de forma a conter os documentos que compõe o Laudo da NR10. O PIE deve ser organizado e mantido atualizado pelo empregador ou pessoa formalmente designada pela empresa, devendo permanecer à disposição dos trabalhadores envolvidos em serviços com eletricidade
             </p>
 
             <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
@@ -208,7 +213,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={termo}
+              src={nr}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -220,9 +225,9 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO TERMOGRÁFICO</h3>
+            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO DE QUALIDADE DE ENERGIA</h3>
             <p className="text-black font-light text-xl my-4">
-            É uma técnica de inspeção não destrutiva, utilizada para avaliação preventiva de componentes e instalações elétricas. Utilizado para medir a temperatura de determinados pontos através da radiação infravermelha, ou seja, o laudo termográfico detecta e informa as altas temperaturas nos mais variados componentes elétricos e eletrônicos tais como: painéis, transformadores, motores entre outros, e assim evita as panes e princípios de incêndios.
+            Tem por finalidade atestar se as instalações industriais estão em boas condições. A qualidade da energia é um ponto crítico nas instalações industriais, sendo uma área pouco explorada podendo comprometer o bom funcionamento dos equipamentos elétricos e eletrônicos. Com um estudo bem elaborado podemos atuar diretamente no ciclo de vida dos equipamentos melhorando sua eficiência e confiabilidade em serviços com eletricidade.
             </p>
 
             <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
@@ -245,7 +250,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={termo}
+              src={laudoicms}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -257,9 +262,9 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO TERMOGRÁFICO</h3>
+            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">LAUDO DE ICMS</h3>
             <p className="text-black font-light text-xl my-4">
-            É uma técnica de inspeção não destrutiva, utilizada para avaliação preventiva de componentes e instalações elétricas. Utilizado para medir a temperatura de determinados pontos através da radiação infravermelha, ou seja, o laudo termográfico detecta e informa as altas temperaturas nos mais variados componentes elétricos e eletrônicos tais como: painéis, transformadores, motores entre outros, e assim evita as panes e princípios de incêndios.
+            A consultoria para crédito de ICMS, consiste em estudo técnico realizado por um Engenheiro eletricista, que irá quantificar a energia utilizada no processo de industrialização.
             </p>
 
             <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
