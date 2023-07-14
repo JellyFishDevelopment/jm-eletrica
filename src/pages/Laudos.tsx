@@ -30,7 +30,7 @@ export default function Laudos() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-center font-bold text-5xl sm:text-4xl">
-            Laudos
+            Laudos Técnicos
           </h1>
         </motion.div>
         <motion.div
