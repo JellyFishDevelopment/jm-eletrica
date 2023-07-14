@@ -29,7 +29,7 @@ const ModalContent = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
-  width: 50%;
+  width: 70%;
 `
 
 const ModalClose = styled.button`
@@ -68,7 +68,7 @@ const Modal = ({ isOpen, onClose, title, list }: any) => {
             <ModalListItem key={index}>{item}</ModalListItem>
           ))}
           <NavLink to="/contact">
-            <button className="flex rounded-md justify-center p-4 w-1/2 text-center  my-4 mx-auto outline-none bg-[#5C5C5C] text-white">
+            <button className="flex rounded-md justify-center p-4 w-5/6 text-center   mx-auto outline-none bg-[#5C5C5C] text-white">
               Faça seu orçamento!
             </button>
           </NavLink>

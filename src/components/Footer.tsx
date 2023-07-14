@@ -14,7 +14,7 @@ export default function Footer() {
           <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
             Contato
           </h2>
-          <ul className="text-black flex flex-col" style={{ fontSize: 12}}>
+          <ul className="text-black flex flex-col" style={{ fontSize: 12 }}>
             <li className="mb-4 ">JM Soluções em Energia LTDA.</li>
             <li className="mb-4 ">CNPJ: 44.312.966/0001-30</li>
             <li className="mb-4 ">
@@ -30,7 +30,7 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Menu
             </h2>
-            <ul className="text-black flex flex-col" style={{ fontSize: 12}}>
+            <ul className="text-black flex flex-col" style={{ fontSize: 12 }}>
               <Link className="mb-4 hover:underline" to="/about">
                 Sobre nós
               </Link>
@@ -49,13 +49,17 @@ export default function Footer() {
             <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
               Nossos Serviços
             </h2>
-            <ul className="text-black flex flex-col "  style={{ fontSize: 12}}>
+            <ul className="text-black flex flex-col " style={{ fontSize: 12 }}>
               <li className="mb-4 ">Projetos Elétricos</li>
               <li className="mb-4 ">Laudos Técnicos</li>
             </ul>
           </div>
           <div>
-            <img src={logoImg} className="mx-auto sm:mx-0 my-4 h-24" alt="" />
+            <img
+              src={logoImg}
+              className="mx-auto sm:mx-0 my-4 sm:h-24"
+              alt=""
+            />
 
             <div className="flex justify-center">
               <div className="flex mt-4 space-x-6  sm:mt-0">

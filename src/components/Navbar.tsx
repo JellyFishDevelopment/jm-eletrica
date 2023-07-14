@@ -10,7 +10,7 @@ export default function Navbar() {
   const options = [
     { label: 'Projetos Elétricos', link: '/projetos' },
     // { label: 'Execução', link: '/execucao' },
-    { label: 'Laudos Técnicos', link: '/laudos' },
+    { label: 'Laudos Técnicos', link: '/laudos' }
     // { label: 'Consultoria de Serviço', link: '/consultoria' }
   ]
 
@@ -82,9 +82,7 @@ export default function Navbar() {
         <div className="flex items-center m-auto sm:m-0">
           <WhatsappLogo color="#22c55e" size={32} />
           <p
-            className={`${
-              open ? 'block' : 'hidden'
-            } text-center w-full md:w-auto lg:text-xl 2xl:text-1xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
+            className={`text-center w-full md:w-auto lg:text-xl 2xl:text-1xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
           >
             (13) 99646-2507
           </p>

@@ -50,7 +50,7 @@ export default function Services() {
         avatar={logoImage}
         placeholder="Mensagem:"
       />
-      
+
       <div className="p-8 sm:p-12 h-50 text-black bg-[#f2f2f2]">
         {/* Título */}
         <motion.div
@@ -59,57 +59,54 @@ export default function Services() {
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
         >
-        <h1 className="text-center font-bold text-3xl sm:text-4xl titulo-servicos">
-          Serviços
-        </h1>
-  
-
+          <h1 className="text-center font-bold text-3xl sm:text-4xl titulo-servicos">
+            Serviços
+          </h1>
         </motion.div>
-        </div>
-
-        {/* Serviços + Imagens */}
-        <motion.div
-          initial={{ opacity: 0, y: 90 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.9 }}
-          className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-26"
-        >
-          <img
-            src={imagemProjeto}
-            className="rounded-full mx-auto sm:m-0 w-72 h-72 sm:w-96 sm:h-96"
-            alt="Imagem de laudo e instalações elétricas"
-          />
-          <CartaoServico
-            image={<NotePencil size={80} color="#FAD40F" />}
-            title="Projetos"
-            description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
-            link="/projetos"
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -90 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.9 }}
-          className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
-        >
-          <CartaoServico
-            image={<CheckCircle size={80} color="#FAD40F" />}
-            title="Laudos Técnicos"
-            description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
-            link="/laudos"
-          />
-          <img
-            src={imagemLaudo}
-            className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
-            alt="Imagem de laudo e instalações elétricas"
-          />
-        </motion.div>
-        <hr />
-        <Footer />
       </div>
 
+      {/* Serviços + Imagens */}
+      <motion.div
+        initial={{ opacity: 0, y: 90 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.9 }}
+        className="flex flex-col-reverse p-8 sm:flex-row sm:justify-evenly my-26"
+      >
+        <img
+          src={imagemProjeto}
+          className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96 sm:h-96"
+          alt="Imagem de laudo e instalações elétricas"
+        />
+        <CartaoServico
+          image={<NotePencil size={80} color="#FAD40F" />}
+          title="Projetos"
+          description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
+          link="/projetos"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -90 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.9 }}
+        className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
+      >
+        <CartaoServico
+          image={<CheckCircle size={80} color="#FAD40F" />}
+          title="Laudos Técnicos"
+          description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
+          link="/laudos"
+        />
+        <img
+          src={imagemLaudo}
+          className="rounded-full mx-auto my-4 sm:m-0 w-72 h-72 sm:w-96  sm:h-96"
+          alt="Imagem de laudo e instalações elétricas"
+        />
+      </motion.div>
+      <hr />
+      <Footer />
+    </div>
   )
 }

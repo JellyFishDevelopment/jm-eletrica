@@ -120,17 +120,17 @@ export default function Home() {
             className="sm:h-[689px] w-full object-cover"
           />
         </Carousel>
-        <div className="absolute w-full px-8 pb-8 pt-16">
+        <div className="absolute w-full px-8 md:pb-8 md:pt-16 pt-10">
           <motion.div
             initial={{ opacity: 0, x: -90 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.9 }}
           >
-            <h2 className="mt-16 font-bold text-4xl sm:text-3xl text-white">
+            <h2 className="md:mt-16 font-bold text-2xl md:text-4xl sm:text-3xl text-white">
               Conheça o nosso portifólio.
             </h2>
-            <h2 className="font-bold text-4xl sm:text-5xl md:text-5xl text-white">
+            <h2 className="font-bold text-2xl md:text-4xl sm:text-5xl md:text-5xl text-white">
               Laudos e Projetos Elétricos.
             </h2>
           </motion.div>
@@ -141,7 +141,7 @@ export default function Home() {
             viewport={{ once: false }}
             transition={{ duration: 0.9 }}
           >
-            <div className="flex flex-col sm:flex-row mt-20">
+            <div className="flex flex-col sm:flex-row md:mt-20">
               <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
                 <LinkNav to="/contact">
                   {' '}
@@ -223,7 +223,13 @@ export default function Home() {
 
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
-        <h2 className="text-black text-center underline font-bold text-4xl sm:text-5xl" style={{ textDecorationLine: 'underline', textDecorationColor: '#FAD40F' }}>
+        <h2
+          className="text-black text-center underline font-bold text-4xl sm:text-5xl"
+          style={{
+            textDecorationLine: 'underline',
+            textDecorationColor: '#FAD40F'
+          }}
+        >
           Nossos serviços
         </h2>
         {/* <p className="text-black text-center font-normal text-2xl">
@@ -236,7 +242,7 @@ export default function Home() {
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-            <button onClick={handleOpenModal1}>
+            <button className="w-full" onClick={handleOpenModal1}>
               <ServiceCard
                 image={<NotePencil size={80} color="#FAD40F" />}
                 text="Projetos"
@@ -280,7 +286,7 @@ export default function Home() {
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
           >
-            <button onClick={handleOpenModal3}>
+            <button className="w-full" onClick={handleOpenModal3}>
               <ServiceCard
                 image={<Lightning size={80} color="#FAD40F" />}
                 text="Laudos Técnicos"
@@ -334,14 +340,19 @@ export default function Home() {
             alt="Logo"
           />
 
-          
-      <div className="text-center sm:w-1/2 sm:text-left mx-auto text-black">
-        <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">Quem somos</h3>
-          <p className="font-bold text-2xl">JM SOLUÇÃO EM ENERGIA</p>
-          <p className="font-light text-1xl my-5">
-            A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
-            Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
-          </p>
+          <div className="text-center sm:w-1/2 sm:text-left mx-auto text-black">
+            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+              Quem somos
+            </h3>
+            <p className="font-bold text-2xl">JM SOLUÇÃO EM ENERGIA</p>
+            <p className="font-light text-1xl my-5">
+              A JM Soluções em Energia, é uma empresa de engenharia elétrica
+              fundada em 2021 na cidade de São Vicente – SP. Oferecemos serviços
+              como: projetos elétricos, laudos, acompanhamento de obras,
+              consultorias e manutenção residencial, predial e industrial.
+              Visando sempre segurança, qualidade e satisfação, atendendo da
+              melhor forma a necessidade de cada cliente.
+            </p>
             {/* <h3 className="font-bold text-4xl sm:text-4xl">
               Quem somos
             </h3>
@@ -350,7 +361,10 @@ export default function Home() {
               referência quando o assunto é qualidade e eficiência. Estamos
               aptos para entregar aquilo que o cliente merece.
             </p> */}
-            <button className=" mx-auto text-center bg-[#FAD40F] text-white p-6  rounded-full font-bold text-x" style={{ textShadow: '2px 2px 4px #808080' }}>
+            <button
+              className=" mx-auto text-center bg-[#FAD40F] text-white p-6  rounded-full font-bold text-x"
+              style={{ textShadow: '2px 2px 4px #808080' }}
+            >
               <LinkNav to="/contact">
                 <p>Faça seu orçamento agora!</p>
               </LinkNav>
