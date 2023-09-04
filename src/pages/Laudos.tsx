@@ -4,11 +4,12 @@ import Footer from '../components/Footer'
 import logoImage from '/logo-jm.png'
 import { motion } from 'framer-motion'
 import { Link as LinkNav } from 'react-router-dom'
-import imagemProjeto from '/projetoseletricos.png'
 import termo from '/laudo-3.png'
 import spda from '/laudo-2.png'
-import nr from '/laudo-1.png'
+import qualidade from '/laudo-7.jpg'
 import laudoicms from '/laudoicms.png'
+import pie from '/laudo-8.jpg'
+import inst from '/laudo-9.jpg'
 
 export default function Laudos() {
   return (
@@ -149,7 +150,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={nr}
+              src={inst}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -195,7 +196,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={nr}
+              src={pie}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />
@@ -240,7 +241,7 @@ export default function Laudos() {
             className="flex flex-col-reverse sm:flex-row sm:justify-evenly my-2"
           >
             <img
-              src={nr}
+              src={qualidade}
               className="mx-auto my-4 sm:m-0 w-150 h-150 sm:w-110 sm:h-110"
               alt="Imagem de laudo e instalações elétricas"
             />

@@ -157,7 +157,6 @@ export default function ProjetosEletricos() {
             <p className="text-black font-light text-xl my-4">
             Projetos fotovoltaicos são projetos que envolvem a instalação de sistemas de geração de energia elétrica a partir da luz solar, também conhecidos como sistemas de energia solar fotovoltaica. Esses projetos podem ser aplicados em diferentes tipos de edificações, como residências, comércios e indústrias, além de projetos em grande escala, como usinas solares.
             O objetivo principal de um projeto fotovoltaico é fornecer energia elétrica de forma limpa e renovável, reduzindo a dependência de fontes não renováveis, como os combustíveis fósseis. Além disso, os projetos fotovoltaicos podem trazer economia financeira a longo prazo, já que a energia gerada pelo sistema pode ser utilizada para abastecer as necessidades elétricas do imóvel e, eventualmente, gerar créditos de energia que podem ser utilizados para abater a conta de luz.
-
             </p>
 
             <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
