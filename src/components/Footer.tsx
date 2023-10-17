@@ -80,7 +80,7 @@ export default function Footer() {
                 </Link>
                 <Link
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                  to="/"
+                  to="https://wa.me/5513996462507"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

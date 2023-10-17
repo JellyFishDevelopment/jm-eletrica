@@ -82,7 +82,7 @@ export default function Home() {
       <FloatingWhatsApp
         darkMode={true}
         accountName="JM Elétrica"
-        phoneNumber="+55 13 99106-3173"
+        phoneNumber="+55 13 99646-2507"
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""
         avatar={logoImage}
