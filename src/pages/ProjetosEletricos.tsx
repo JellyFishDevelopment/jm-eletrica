@@ -28,7 +28,7 @@ export default function ProjetosEletricos() {
         placeholder="Mensagem:"
       />
       {/* Cabeçalho */}
-      <div className="p-8 sm:p-16 h-60 text-black bg-[#f2f2f2]">
+      <div className="p-8 sm:p-16 h-90 text-black bg-[#f2f2f2]">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
