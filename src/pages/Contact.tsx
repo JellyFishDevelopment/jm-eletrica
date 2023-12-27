@@ -57,7 +57,7 @@ export default function Contact() {
       <div className="bg-[#d3d3d3] p-12">
         <form
           className="bg-[#818181] sm:w-1/3 mx-auto p-8 flex flex-col"
-          action="https://formsubmit.co/jellyfishdevelop@gmail.com"
+          action="https://formsubmit.co/contato@jmsolucoesenergia.com.br"
           method="POST"
         >
           <input type="hidden" name="_captcha" value="false" />
