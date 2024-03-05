@@ -22,7 +22,7 @@ export default function Footer() {
               <p>- São Vicente / SP</p>
             </li>
             <li className="mb-4 ">Telefone: (13) 99646-2507</li>
-            <li className="mb-4 ">E-mail: jmsolucoeseletricas@hotmail.com</li>
+            <li className="mb-4 ">E-mail: contato@jmsolucoesenergia.com.br</li>
           </ul>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
