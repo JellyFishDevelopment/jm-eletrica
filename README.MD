@@ -12,7 +12,7 @@
 
 A <b>JM Soluções em Energia</b>, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP. Oferecem serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
 
-<img src="https://i.imgur.com/KigI5Mu.png">
+<img src="https://i.imgur.com/e939G5M.png">
 
 ---
 
