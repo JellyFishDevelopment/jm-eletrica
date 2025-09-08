@@ -1,22 +1,10 @@
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { motion } from 'framer-motion'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
-import logoImage from '/logo-jm.png'
 
 export default function ProjetosEletricos() {
   return (
     <div>
-      {/* Whatsapp */}
-      <FloatingWhatsApp
-        darkMode={true}
-        accountName="JM Elétrica"
-        phoneNumber="+55 13 99646-2507"
-        chatMessage="Olá, como posso te ajudar?"
-        statusMessage=""
-        avatar={logoImage}
-        placeholder="Mensagem:"
-      />
       {/* Cabeçalho */}
       <div className="bg-sixth-banner bg-cover bg-no-repeat p-8 sm:p-16 h-96 text-white">
         <motion.div
@@ -36,7 +24,7 @@ export default function ProjetosEletricos() {
           transition={{ duration: 0.9 }}
         >
           <p className="font-light text-center text-xl sm:text-2xl mt-8">
-          A execução dos projetos é realizada por profissionais e norteada pela NBR 5410 — que dispõe sobre instalações elétricas de baixa tensão.{' '}
+            A execução dos projetos é realizada por profissionais e norteada pela NBR 5410 — que dispõe sobre instalações elétricas de baixa tensão.{' '}
           </p>
         </motion.div>
       </div>
@@ -53,7 +41,7 @@ export default function ProjetosEletricos() {
             Instalações Elétricas Residenciais e Comerciais
           </h3>
           <p className="font-light text-xl my-4">
-          Desenvolvimento do projeto e a instalação de um sistema elétrico em um estabelecimento comercial.
+            Desenvolvimento do projeto e a instalação de um sistema elétrico em um estabelecimento comercial.
           </p>
         </motion.div>
         <motion.div
@@ -81,7 +69,7 @@ export default function ProjetosEletricos() {
             Acompanhamento de Obras
           </h3>
           <p className="font-light text-xl my-4">
-          Garantir que a execução dos serviços esteja de acordo com as condições e especificações técnicas presentes no escopo do projeto, evitando retrabalhos e gastos desnecessários.
+            Garantir que a execução dos serviços esteja de acordo com as condições e especificações técnicas presentes no escopo do projeto, evitando retrabalhos e gastos desnecessários.
           </p>
         </motion.div>
       </div>

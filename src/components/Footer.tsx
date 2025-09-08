@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logoImg from '../assets/logo-jm.png'
+import logoImg from '/eisen_preto.png'
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
               <p>- São Vicente / SP</p>
             </li>
             <li className="mb-4 ">Telefone: (13) 99646-2507</li>
-            <li className="mb-4 ">E-mail: contato@jmsolucoesenergia.com.br</li>
+            <li className="mb-4 ">E-mail: einsensolutions@gmail.com</li>
           </ul>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -57,7 +57,7 @@ export default function Footer() {
           <div>
             <img
               src={logoImg}
-              className="mx-auto sm:mx-0 my-4 sm:h-24"
+              className="mx-auto sm:mx-0 my-4 sm:h-12"
               alt=""
             />
 
@@ -65,7 +65,7 @@ export default function Footer() {
               <div className="flex mt-4 space-x-6  sm:mt-0">
                 <Link
                   target="_blank"
-                  to="https://www.instagram.com/eng.jairmelo/"
+                  to="https://www.instagram.com/einsensolutions/"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
                   <svg

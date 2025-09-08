@@ -1,29 +1,17 @@
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
-import logoImage from '/logo-jm.png'
 import { motion } from 'framer-motion'
 import { Link as LinkNav } from 'react-router-dom'
-import termo from '/laudo-3.png'
-import spda from '/laudo-2.png'
-import qualidade from '/laudo-7.jpg'
-import laudoicms from '/laudoicms.png'
-import pie from '/laudo-8.jpg'
-import inst from '/laudo-9.jpg'
+import termo from '/LAUDOtermografico2.png'
+import spda from '/LAUDOspda2.png'
+import qualidade from '/CONSULTORIAqualidadedenergia.png'
+import laudoicms from '/CONSULTORIAicms.png'
+import pie from '/CONSULTORIApie.png'
+import inst from '/LAUDOinsteletricas.png'
 
 export default function Laudos() {
   return (
     <div>
-      {/* Whatsapp */}
-      <FloatingWhatsApp
-        darkMode={true}
-        accountName="JM Elétrica"
-        phoneNumber="+55 13 99646-2507"
-        chatMessage="Olá, como posso te ajudar?"
-        statusMessage=""
-        avatar={logoImage}
-        placeholder="Mensagem:"
-      />
       {/* Cabeçalho */}
       <div className="p-8 sm:p-16 sm:h-60 text-black bg-[#f2f2f2]">
         <motion.div
@@ -74,7 +62,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDO TERMOGRÁFICO
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -87,7 +75,7 @@ export default function Laudos() {
               outros, e assim evita as panes e princípios de incêndios.
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
@@ -119,7 +107,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDOS DE SPDA E MPS
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -131,7 +119,7 @@ export default function Laudos() {
               eliminar riscos de danos as pessoas, empreendimentos e indústrias.
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
@@ -162,7 +150,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDO INSTALAÇÕES NR-10
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -176,7 +164,7 @@ export default function Laudos() {
               elétrica, incêndios, explosões entre outros.
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
@@ -208,7 +196,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDO DE PIE
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -221,7 +209,7 @@ export default function Laudos() {
               envolvidos em serviços com eletricidade
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
@@ -253,7 +241,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDO DE QUALIDADE DE ENERGIA
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -266,7 +254,7 @@ export default function Laudos() {
               confiabilidade em serviços com eletricidade.
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
@@ -298,7 +286,7 @@ export default function Laudos() {
             transition={{ duration: 0.6 }}
             className="mx-auto text-white w-3/4 sm:w-3/4 rounded-xl"
           >
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               LAUDO DE ICMS
             </h3>
             <p className="text-black font-light text-xl my-4">
@@ -307,7 +295,7 @@ export default function Laudos() {
               energia utilizada no processo de industrialização.
             </p>
 
-            <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+            <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
               <LinkNav to="/contact">
                 {' '}
                 <p>Faça seu orçamento agora</p>
