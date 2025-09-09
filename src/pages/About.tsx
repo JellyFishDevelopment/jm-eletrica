@@ -63,9 +63,9 @@ export default function About() {
         >
 
           <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">Quem somos</h3>
-          <p className="font-bold text-2xl">EISEN SOLUTIONS</p>
+          <p className="font-bold text-2xl">EINSEN SOLUTIONS</p>
           <p className="font-light text-1xl my-5">
-            A EISEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+            A EINSEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
             Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
           </p>
 
@@ -140,7 +140,7 @@ export default function About() {
             Confiabilidade.
           </p>
           <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
-          A EISEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+          A EINSEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
           Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
 
           </p>

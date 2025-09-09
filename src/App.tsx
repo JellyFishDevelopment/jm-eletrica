@@ -14,7 +14,7 @@ function App() {
       </ScrollTop>
       <FloatingWhatsApp
         darkMode={true}
-        accountName="EISEN SOLUTIONS"
+        accountName="EINSEN SOLUTIONS"
         phoneNumber="+55 13 99646-2507"
         chatMessage="Olá, como posso te ajudar?"
         statusMessage=""

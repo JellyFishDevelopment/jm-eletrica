@@ -335,9 +335,9 @@ export default function Home() {
             <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               Quem somos
             </h3>
-            <p className="font-bold text-2xl">EISEN SOLUTIONS</p>
+            <p className="font-bold text-2xl">EINSEN SOLUTIONS</p>
             <p className="font-light text-1xl my-5">
-              A EISEN Solutions, é uma empresa de engenharia elétrica
+              A EINSEN Solutions, é uma empresa de engenharia elétrica
               fundada em 2021 na cidade de São Vicente – SP. Oferecemos serviços
               como: projetos elétricos, laudos, acompanhamento de obras,
               consultorias e manutenção residencial, predial e industrial.
@@ -357,7 +357,7 @@ export default function Home() {
       <div>
         <div className="bg-white p-16">
           <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
-            Cases de sucesso
+            Clientes e Parceiros
           </h2>
 
           <motion.div
@@ -367,10 +367,10 @@ export default function Home() {
             transition={{ duration: 0.9 }}
             className="flex flex-col sm:flex-row justify-evenly my-16"
           >
-            <SuccessCase CompanyText="MELQ Saúde" CompanyImage="/melq_saude.jpg" />
-            <SuccessCase CompanyText="FAST PREV CONSULTORIA E ASSESSORIA" CompanyImage="/fastprev.png" />
-            <SuccessCase CompanyText="SPANDEX" CompanyImage="/spandex.png" />
-            <SuccessCase CompanyText="ECOPHON SAINT-GOBAIN" CompanyImage="/ecophon.svg" />
+            <SuccessCase CompanyText="MELQ Saúde" />
+            <SuccessCase CompanyText="FAST PREV CONSULTORIA E ASSESSORIA" />
+            <SuccessCase CompanyText="SPANDEX" />
+            <SuccessCase CompanyText="ECOPHON SAINT-GOBAIN" />
           </motion.div>
         </div>
       </div>
