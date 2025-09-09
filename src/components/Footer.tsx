@@ -15,8 +15,7 @@ export default function Footer() {
             Contato
           </h2>
           <ul className="text-black flex flex-col" style={{ fontSize: 12 }}>
-            <li className="mb-4 ">JM Soluções em Energia LTDA.</li>
-            <li className="mb-4 ">CNPJ: 44.312.966/0001-30</li>
+            <li className="mb-4 ">EINSEN SOLUTIONS</li>
             <li className="mb-4 ">
               <p>Av. Antônio Emmerich 499 – Bairro Vila Cascatinha </p>
               <p>- São Vicente / SP</p>
