@@ -214,7 +214,7 @@ export default function Home() {
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
         <h2
-          className="text-black text-center underline font-bold text-4xl sm:text-5xl"
+          className="text-black text-center underline font-bold text-3xl sm:text-4xl"
           style={{
             textDecorationLine: 'underline',
             textDecorationColor: '#1e55f4'
@@ -356,7 +356,11 @@ export default function Home() {
       </div>
       <div>
         <div className="bg-white p-16">
-          <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
+          <h2 className="text-black text-center font-bold text-3xl sm:text-4xl"
+            style={{
+              textDecorationLine: 'underline',
+              textDecorationColor: '#1e55f4'
+            }}>
             Clientes e Parceiros
           </h2>
 
