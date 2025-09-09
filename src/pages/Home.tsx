@@ -367,10 +367,10 @@ export default function Home() {
             transition={{ duration: 0.9 }}
             className="flex flex-col sm:flex-row justify-evenly my-16"
           >
-            <SuccessCase CompanyText="MELQ Saúde" />
-            <SuccessCase CompanyText="FAST PREV CONSULTORIA E ASSESSORIA" />
-            <SuccessCase CompanyText="SPANDEX" />
-            <SuccessCase CompanyText="ECOPHON SAINT-GOBAIN" />
+            <SuccessCase CompanyImage="/melq_saude.jpg" />
+            <SuccessCase CompanyImage="/fastprev.png" />
+            <SuccessCase CompanyImage="/spandex.png" />
+            <SuccessCase CompanyImage="/ecophon.svg" />
           </motion.div>
         </div>
       </div>
