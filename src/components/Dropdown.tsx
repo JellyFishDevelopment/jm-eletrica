@@ -30,7 +30,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
 
   let activeStyle = {
     textDecoration: 'underline',
-    textDecorationColor: '#1e55f4'
+    textDecorationColor: '#FAD40F'
   };
 
   return (
@@ -43,7 +43,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options }: any) => {
         style={{ backgroundColor: '#fff' }}
       >
         <span style={isOpen ? activeStyle : {}}>
-
+          
           <span style={location.pathname === '/services' ? activeStyle : {}}>
             {selectedOption ? selectedOption : 'SERVIÇOS'}
           </span>

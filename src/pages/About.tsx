@@ -1,4 +1,5 @@
-
+import eletricaUm from '/eletrica-1.png'
+import eletricaDois from '/eletrica-2.png'
 import trabalhoUm from '/trabalho-1.png'
 import trabalhoDois from '/trabalho-2.png'
 import trabalhoTres from '/trabalho-3.png'
@@ -7,6 +8,8 @@ import Footer from '../components/Footer'
 import TrabalhoCard from '../components/TrabalhoCard'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+import logoImage from '/logo-jm.png'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { Link as LinkNav } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
@@ -42,6 +45,15 @@ export default function About() {
   }, [])
   return (
     <div>
+      <FloatingWhatsApp
+        darkMode={true}
+        accountName="JM Elétrica"
+        phoneNumber="+55 13 99106-3173"
+        chatMessage="Olá, como posso te ajudar?"
+        statusMessage=""
+        avatar={logoImage}
+        placeholder="Mensagem:"
+      />
       {/* Sobre nós */}
       <div className="bg-[#f2f2f2] p-8 ">
         <motion.div
@@ -61,21 +73,22 @@ export default function About() {
           transition={{ duration: 1.1 }}
           className="text-black p-8 sm:p-16 bg-[#f2f2f2] rounded-xl sm:w-3/4 mx-auto my-16"
         >
-
-          <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">Quem somos</h3>
-          <p className="font-bold text-2xl">EINSEN SOLUTIONS</p>
+          
+          <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">Quem somos</h3>
+          <p className="font-bold text-2xl">JM SOLUÇÃO EM ENERGIA</p>
           <p className="font-light text-1xl my-5">
-            A EINSEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
-            Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
+          A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+          Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
           </p>
 
-          <h3 className="font-bold underline text-3xl text-[#1e55f4]">Visão</h3>
+          <h3 className="font-bold underline text-3xl text-[#FAD40F]">Visão</h3>
           <p className="font-light text-1xl my-5">
             Nossa visão é manter a qualidade e excelência, fornecendo serviços e soluções integradas para se tornar referência no mercado, desta forma conquistando confiança e entregando cada vez mais eficiência nos serviços prestados.</p>
           <div className="text-center">
             <button
               type="button"
-              className=" px-4 py-6 mt-4 font-bold text-1xl bg-[#1e55f4] text-white rounded-full"
+              className=" px-4 py-6 mt-4 font-bold text-1xl bg-[#FAD40F] text-white rounded-full"
+              style={{ textShadow: '2px 2px 4px #808080' }}
             >
               <LinkNav to="/services">
                 {' '}
@@ -140,7 +153,7 @@ export default function About() {
             Confiabilidade.
           </p>
           <p className="sm:w-[750px] text-center font-light text-2xl sm:text-4xl mx-2">
-          A EINSEN Solutions, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
+          A JM Soluções em Energia, é uma empresa de engenharia elétrica fundada em 2021 na cidade de São Vicente – SP.
           Oferecemos serviços como: projetos elétricos, laudos, acompanhamento de obras, consultorias e manutenção residencial, predial e industrial. Visando sempre segurança, qualidade e satisfação, atendendo da melhor forma a necessidade de cada cliente.
 
           </p>

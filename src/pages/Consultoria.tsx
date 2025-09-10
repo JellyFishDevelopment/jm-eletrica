@@ -1,10 +1,22 @@
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
+import logoImage from '/logo-jm.png'
 import { motion } from 'framer-motion'
 
 export default function Consultoria() {
   return (
     <div>
+      {/* Whatsapp */}
+      <FloatingWhatsApp
+        darkMode={true}
+        accountName="JM Elétrica"
+        phoneNumber="+55 13 99106-3173"
+        chatMessage="Olá, como posso te ajudar?"
+        statusMessage=""
+        avatar={logoImage}
+        placeholder="Mensagem:"
+      />
       {/* Cabeçalho */}
       <div className="p-8 sm:p-16 h-96 text-white bg-[#818181]">
         <motion.div

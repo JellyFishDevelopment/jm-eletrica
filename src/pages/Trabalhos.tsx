@@ -1,5 +1,7 @@
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import BannerContato from '../components/BannerContato'
 import Footer from '../components/Footer'
+import logoImage from '/logo-jm.png'
 import trabalhoUm from '/trabalho-1.png'
 import trabalhoDois from '/trabalho-2.png'
 import trabalhoTres from '/trabalho-3.png'
@@ -8,6 +10,16 @@ import { motion } from 'framer-motion'
 export default function Trabalhos() {
   return (
     <div>
+      {/* Whatsapp */}
+      <FloatingWhatsApp
+        darkMode={true}
+        accountName="JM Elétrica"
+        phoneNumber="+55 13 99106-3173"
+        chatMessage="Olá, como posso te ajudar?"
+        statusMessage=""
+        avatar={logoImage}
+        placeholder="Mensagem:"
+      />
       {/* Cabeçalho */}
       <div className="bg-fifth-banner p-16 w-full flex flex-col items-center h-[500px] bg-cover bg-no-repeat  text-white">
         <motion.div

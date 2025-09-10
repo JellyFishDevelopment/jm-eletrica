@@ -17,6 +17,8 @@ import imagemLaudo from '/laudostecnicos.png'
 import imagemProjeto from '/projetoseletricos.png'
 import imagemProjetos from '/projetos.png'
 import CartaoServico from '../components/CartaoServico'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import logoImage from '/logo-jm.png'
 import Footer from '../components/Footer'
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
@@ -39,6 +41,15 @@ export default function Services() {
 
   return (
     <div>
+      <FloatingWhatsApp
+        darkMode={true}
+        accountName="JM Elétrica"
+        phoneNumber="+55 13 99106-3173"
+        chatMessage="Olá, como posso te ajudar?"
+        statusMessage=""
+        avatar={logoImage}
+        placeholder="Mensagem:"
+      />
 
       <div className="p-8 sm:p-12 h-50 text-black bg-[#f2f2f2]">
         {/* Título */}
@@ -68,7 +79,7 @@ export default function Services() {
           alt="Imagem de laudo e instalações elétricas"
         />
         <CartaoServico
-          image={<NotePencil size={80} color="#1e55f4" />}
+          image={<NotePencil size={80} color="#FAD40F" />}
           title="Projetos"
           description="O projeto elétrico consiste na determinação de materiais, tanto em especificação quanto em quantidade, além de como serão feitas as instalações que demandam energia elétrica após o término da obra, isso vale para iluminação e para a rede de tomadas."
           link="/projetos"
@@ -83,7 +94,7 @@ export default function Services() {
         className="flex flex-col p-8  sm:flex-row sm:justify-evenly my-16"
       >
         <CartaoServico
-          image={<CheckCircle size={80} color="#1e55f4" />}
+          image={<CheckCircle size={80} color="#FAD40F" />}
           title="Laudos Técnicos"
           description="O Laudo Técnico é um relatório emitido por um engenheiro especializado, logo após os processos de análise e avaliação, a respeito de um problema ou caso específico. Dessa forma, têm-se o diagnóstico da situação, baseado na experiência e conhecimentos técnicos do profissional."
           link="/laudos"
