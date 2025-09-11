@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logoImg from '../assets/logo-jm.png'
+import logoImg from '/eisen_preto.png'
 import Dropdown from './Dropdown'
 import { WhatsappLogo } from 'phosphor-react'
 
@@ -16,14 +16,14 @@ export default function Navbar() {
 
   let activeStyle = {
     textDecoration: 'underline',
-    textDecorationColor: '#FAD40F'
+    textDecorationColor: '#1e55f4'
   }
 
   return (
     <nav className="p-2 2xl:p-4 font-light text-md w-full bg-white z-10">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link to="/">
-          <img src={logoImg} className="h-20 2xl:w-50 " alt="Logo JM" />
+          <img src={logoImg} className="h-12 2xl:w-50 " alt="Logo EISEN" />
         </Link>
         <button
           onClick={() => setOpen(!open)}
@@ -80,9 +80,9 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex items-center m-auto sm:m-0">
-          <WhatsappLogo color="#22c55e" size={32} />
+          <WhatsappLogo color="#1e55f4" size={32} />
           <p
-            className={`text-center w-full md:w-auto lg:text-xl 2xl:text-1xl font-bold text-green-500 p-4 2xl:px-8 2xl:py-4`}
+            className={`text-center w-full md:w-auto lg:text-xl 2xl:text-1xl font-bold text-[#1e55f4] p-4 2xl:px-8 2xl:py-4`}
           >
             (13) 99646-2507
           </p>

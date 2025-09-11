@@ -7,9 +7,8 @@ import {
 } from 'phosphor-react'
 
 import logoImage from '/logo-jm.png'
-import logoImageFundo from '/logo-jm-fundo.png'
+import logoImageFundo from '/eisen_preto.png'
 import { Carousel, CarouselStylesType } from '@material-tailwind/react'
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ServiceCard from '../components/ServiceCard'
 import SuccessCase from '../components/SuccessCase'
 import BannerContato from '../components/BannerContato'
@@ -79,15 +78,6 @@ export default function Home() {
 
   return (
     <div>
-      <FloatingWhatsApp
-        darkMode={true}
-        accountName="JM Elétrica"
-        phoneNumber="+55 13 99106-3173"
-        chatMessage="Olá, como posso te ajudar?"
-        statusMessage=""
-        avatar={logoImage}
-        placeholder="Mensagem:"
-      />
       {/* Banner principal */}
       <div className="w-full flex flex-col justify-between item-center  text-white">
         <Carousel
@@ -95,9 +85,9 @@ export default function Home() {
           loop={true}
           className="relative"
           transition={{ duration: 2 }}
-          prevArrow={({ handlePrev }) => {}}
-          nextArrow={({ handleNext }) => {}}
-          navigation={({ setActiveIndex, activeIndex, length }) => {}}
+          prevArrow={({ handlePrev }) => { }}
+          nextArrow={({ handleNext }) => { }}
+          navigation={({ setActiveIndex, activeIndex, length }) => { }}
         >
           <img
             src="carrousel-1.png"
@@ -130,7 +120,7 @@ export default function Home() {
             <h2 className="md:mt-16 font-bold text-2xl md:text-4xl sm:text-3xl text-white">
               Conheça o nosso portifólio.
             </h2>
-            <h2 className="font-bold text-2xl md:text-4xl sm:text-5xl md:text-5xl text-white">
+            <h2 className="font-bold text-2xl sm:text-5xl md:text-5xl text-white">
               Laudos e Projetos Elétricos.
             </h2>
           </motion.div>
@@ -142,14 +132,14 @@ export default function Home() {
             transition={{ duration: 0.9 }}
           >
             <div className="flex flex-col sm:flex-row md:mt-20">
-              <button className="self-start mx-4 hidden sm:block bg-[#FAD40F] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+              <button className="self-start mx-4 hidden sm:block bg-[#1e55f4] hover:bg-blue-800 text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
                 <LinkNav to="/contact">
                   {' '}
                   <p>Faça seu orçamento agora</p>
                 </LinkNav>
               </button>
 
-              <button className="self-start mx-4 hidden sm:block bg-[#FFA228] text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
+              <button className="self-start mx-4 hidden sm:block bg-blue-700 hover:bg-blue-800 text-white p-4 2xl:p-6  rounded-full font-bold text-base  2xl:text-xl">
                 <LinkNav to="/services">
                   {' '}
                   <p>Conheça nossos serviços</p>
@@ -224,10 +214,10 @@ export default function Home() {
       {/* Principais serviços */}
       <div id="#servicos" className="bg-white p-12 sm:p-16">
         <h2
-          className="text-black text-center underline font-bold text-4xl sm:text-5xl"
+          className="text-black text-center underline font-bold text-3xl sm:text-4xl"
           style={{
             textDecorationLine: 'underline',
-            textDecorationColor: '#FAD40F'
+            textDecorationColor: '#1e55f4'
           }}
         >
           Nossos serviços
@@ -244,7 +234,7 @@ export default function Home() {
           >
             <button className="w-full" onClick={handleOpenModal1}>
               <ServiceCard
-                image={<NotePencil size={80} color="#FAD40F" />}
+                image={<NotePencil size={80} color="#1e55f4" />}
                 text="Projetos"
               />
             </button>
@@ -266,7 +256,7 @@ export default function Home() {
           >
             <button onClick={handleOpenModal2}>
               <ServiceCard
-                image={<CheckCircle size={80} color="#FAD40F" />}
+                image={<CheckCircle size={80} color="#1e55f4" />}
                 text="Execução"
               />
             </button>
@@ -288,7 +278,7 @@ export default function Home() {
           >
             <button className="w-full" onClick={handleOpenModal3}>
               <ServiceCard
-                image={<Lightning size={80} color="#FAD40F" />}
+                image={<Lightning size={80} color="#1e55f4" />}
                 text="Laudos Técnicos"
               />
             </button>
@@ -310,7 +300,7 @@ export default function Home() {
           >
             <button onClick={handleOpenModal4}>
               <ServiceCard
-                image={<ClipboardText size={80} color="#FAD40F" />}
+                image={<ClipboardText size={80} color="#1e55f4" />}
                 text="Consultoria de Serviço"
               />
             </button>
@@ -326,44 +316,36 @@ export default function Home() {
         </div>
       </div>
       {/* Quem somos - página inicial */}
-      <div className=" p-16 w-full bg-no-repeat bg-cover">
+      <div className="p-16 w-full bg-no-repeat bg-cover flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.9 }}
-          className="flex flex-col sm:flex-row justify-between"
+          className="flex flex-col sm:flex-row justify-between w-full"
         >
-          <img
-            src={logoImageFundo}
-            className="w-40 h-40 sm:w-80 sm:h-80 mx-auto rounded-half"
-            alt="Logo"
-          />
-
-          <div className="text-center sm:w-1/2 sm:text-left mx-auto text-black">
-            <h3 className="font-bold underline my-5 text-3xl text-[#FAD40F]">
+          <div className="flex flex-col items-center justify-center w-full sm:w-1/2">
+            <img
+              src={logoImageFundo}
+              className="w-40 h-24 sm:w-80 sm:h-24 rounded-half mb-6"
+              alt="Logo"
+            />
+          </div>
+          <div className="text-center sm:w-1/2 sm:text-left mx-auto text-black flex flex-col justify-center">
+            <h3 className="font-bold underline my-5 text-3xl text-[#1e55f4]">
               Quem somos
             </h3>
-            <p className="font-bold text-2xl">JM SOLUÇÃO EM ENERGIA</p>
+            <p className="font-bold text-2xl">EINSEN SOLUTIONS</p>
             <p className="font-light text-1xl my-5">
-              A JM Soluções em Energia, é uma empresa de engenharia elétrica
+              A EINSEN Solutions, é uma empresa de engenharia elétrica
               fundada em 2021 na cidade de São Vicente – SP. Oferecemos serviços
               como: projetos elétricos, laudos, acompanhamento de obras,
               consultorias e manutenção residencial, predial e industrial.
               Visando sempre segurança, qualidade e satisfação, atendendo da
               melhor forma a necessidade de cada cliente.
             </p>
-            {/* <h3 className="font-bold text-4xl sm:text-4xl">
-              Quem somos
-            </h3>
-            <p className="my-8 font-normal text-1xl">
-              Há 12 anos trabalhando com engenharia elétrica, buscamos ser
-              referência quando o assunto é qualidade e eficiência. Estamos
-              aptos para entregar aquilo que o cliente merece.
-            </p> */}
             <button
-              className=" mx-auto text-center bg-[#FAD40F] text-white p-6  rounded-full font-bold text-x"
-              style={{ textShadow: '2px 2px 4px #808080' }}
+              className="mx-auto text-center bg-[#1e55f4] text-white p-6 rounded-full font-bold text-x"
             >
               <LinkNav to="/contact">
                 <p>Faça seu orçamento agora!</p>
@@ -372,11 +354,14 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-      {/* Cases de sucesso
       <div>
         <div className="bg-white p-16">
-          <h2 className="text-black text-center font-bold text-4xl sm:text-6xl">
-            Cases de sucesso
+          <h2 className="text-black text-center font-bold text-3xl sm:text-4xl"
+            style={{
+              textDecorationLine: 'underline',
+              textDecorationColor: '#1e55f4'
+            }}>
+            Clientes e Parceiros
           </h2>
 
           <motion.div
@@ -386,12 +371,13 @@ export default function Home() {
             transition={{ duration: 0.9 }}
             className="flex flex-col sm:flex-row justify-evenly my-16"
           >
-            <SuccessCase CompanyText="Empresa" />
-            <SuccessCase CompanyText="Empresa" />
-            <SuccessCase CompanyText="Empresa" />
+            <SuccessCase CompanyImage="/melq_saude.jpg" />
+            <SuccessCase CompanyImage="/fastprev.png" />
+            <SuccessCase CompanyImage="/spandex.png" />
+            <SuccessCase CompanyImage="/ecophon.svg" />
           </motion.div>
         </div>
-      </div> */}
+      </div>
       {/* Banner fale conosco */}
       <BannerContato />
       {/* Footer */}
