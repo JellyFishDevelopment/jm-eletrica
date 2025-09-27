@@ -20,6 +20,9 @@ export default function Footer() {
               <p>Av. Antônio Emmerich 499 – Bairro Vila Cascatinha </p>
               <p>- São Vicente / SP</p>
             </li>
+            <li className="mb-4 ">
+              CNPJ: 62.795.227/0001-28
+            </li>
             <li className="mb-4 ">Telefone: (13) 99646-2507</li>
             <li className="mb-4 ">E-mail: einsensolutions@gmail.com</li>
           </ul>
