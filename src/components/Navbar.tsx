@@ -57,7 +57,7 @@ export default function Navbar() {
             </NavLink>
             <NavLink
               className="my-2 text-center"
-              to="/services"
+              to="/servicos"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               <Dropdown options={options} />
@@ -65,14 +65,14 @@ export default function Navbar() {
 
             <NavLink
               className="my-2 text-center"
-              to="/about"
+              to="/sobre"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               SOBRE NÓS
             </NavLink>
             <NavLink
               className="my-2 text-center"
-              to="/contact"
+              to="/contato"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               CONTATO
