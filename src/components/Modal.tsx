@@ -67,7 +67,7 @@ const Modal = ({ isOpen, onClose, title, list }: any) => {
           {list.map((item: any, index: any) => (
             <ModalListItem key={index}>{item}</ModalListItem>
           ))}
-          <NavLink to="/contact">
+          <NavLink to="/contato">
             <button className="flex rounded-md justify-center p-4 w-5/6 text-center   mx-auto outline-none bg-[#5C5C5C] text-white">
               Faça seu orçamento!
             </button>

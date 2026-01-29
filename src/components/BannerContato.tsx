@@ -6,7 +6,7 @@ export default function BannerContato() {
         Entre em contato com a EINSEN SOLUTIONS
       </p>
       <button className="w-full sm:w-auto mx-auto text-center bg-[#1e55f4] text-white p-6  rounded-2xl px-12 font-bold text-xl 2xl:text-1xl">
-        <Link to="/contact">
+        <Link to="/contato">
           <p>Fale conosco</p>
         </Link>
       </button>
