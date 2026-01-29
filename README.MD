@@ -16,6 +16,24 @@ A <b>JM Soluções em Energia</b>, é uma empresa de engenharia elétrica fundad
 
 ---
 
+### Deploy automático (Vercel)
+
+Cada push nas branches `main` ou `master` dispara o workflow de deploy na Vercel.
+
+**Configuração (uma vez):**
+
+1. Crie um projeto na [Vercel](https://vercel.com) (importe o repositório ou crie vazio e linke depois).
+2. Gere um token em [Vercel → Settings → Tokens](https://vercel.com/account/tokens).
+3. Obtenha **Organization ID** e **Project ID** no dashboard do projeto (Settings → General) ou rodando `vercel link` localmente e lendo `.vercel/project.json`.
+4. No GitHub, vá em **Settings → Secrets and variables → Actions** e crie:
+   - `VERCEL_TOKEN` — token da Vercel
+   - `VERCEL_ORG_ID` — ID da organização/equipe
+   - `VERCEL_PROJECT_ID` — ID do projeto
+
+Depois disso, os commits em `main`/`master` farão o deploy em produção automaticamente.
+
+---
+
 ### Entre em Contato 📞
 
 Quer tirar uma dúvida ou solicitar um orçamento?  
